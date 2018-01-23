@@ -1,0 +1,19 @@
+ *
+ * Doctype         : Info
+ * Created by      : Leonardo Vencovsky
+ * Together with   : niemand / ninguém / nadie / nobody ~~~~~~
+ * Date            : 23/01/2018
+ * Last modified   : 23/01/2018
+ * Editor          : Sublime Text 3
+ * Inspiration     : Alura [www.alura.com.br]  Excel: Domine o editor de planilhas mais famoso do mundo
+ * Language        : Portuguese
+ *
+ * Resumo de Excel
+ *
+
+Cont.valores() – Retorna o número de células preenchidas
+Contar.vazio() – Retorna o número de células que contém valor nulo (vazio)
+Cont.Num() – Retorna o número de células que contém valores numéricos
+Média() – Retorna o resultado da média do intervalo selecionado
+Máximo() – Retorna o maior valor do intervalo selecionado
+Mínimo() – Retorna o menor valor do intervalo selecionado

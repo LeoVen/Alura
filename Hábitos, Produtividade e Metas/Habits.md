@@ -61,3 +61,33 @@ Para uma meta ser relevante, ela precisa não só estar alinhada ao seu propósi
 
 Tempo é dinheiro! É muito importante mantermos um equilíbrio entre as metas que desejamos realizar e o tempo que temos. Criar sempre uma referência de tempo e definir um calendário para combater a procrastinação. Estudar 2 cursos em 1 semana. Ler 30 minutos a cda dia.
 
+## Maxwell Maltz
+
+>Estes e muitos outros fenômenos comumente observados tendem a mostrar que requer um mínimo de cerca de 21 dias para que uma velha imagem mental se dissolva e uma nova para se gelificar.
+
+### Mas não se engane!
+~~__Demoram__ 21 dias para se formar um novo hábito~~
+
+Há um __Mínimo__ de 21 dias para formar um novo hábito
+
+## Phillippa Lally
+
+De acordo com o estudo realizado pela pesquisadora de Psicologia da saúde no University College de Londres, Phillippa Lally, ao examinar 96 indivíduos, percebeu-se que elas duraram em média __66 dias__ para desenvolver um novo comportamento.
+
+#### Comportamento
+
+O comportamento é um dos fatores importantes para se criar um novo hábito. Você é dedicado? Busca sempre adquirir novos hábitos?
+
+#### Pessoa
+
+Outro fator importante. Depende de cada pessoa. Como crescemos, onde crescemos, o que fazemos no dia-a-dia.
+
+#### Circunstância
+
+Um dia nos sentimos bem, outros já nem tanto. Um dia trabalhamos duro, outros conseguimos respirar. Portanto para criar um hábito depende muito da situação em que estamos cada dia.
+
+## Veredito
+
+>Um novo hábito pode ser incorporado entre 18 a 254 dias.
+<br>
+Construir novos hábitos não é um processo de "tudo ou nada". É preciso ter flexibilidade.
