@@ -1,0 +1,13 @@
+body {
+	font-family: "Open Sans Condensed", sans-serif;
+}
+
+article footer p a {
+	text-decoration: none;
+	color: #bc2020;
+	transition: 0.5s;
+}
+
+article footer p a:hover {
+	color: #0891d1;
+}

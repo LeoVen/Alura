@@ -1,0 +1,34 @@
+/*
+ * Doctype         : Info
+ * Created by      : Leonardo Vencovsky
+ * Together with   : niemand / ninguém / nadie / nobody ~~~~~~
+ * Date            : 21/01/2018
+ * Last modified   : 21/01/2018
+ * Editor          : Sublime Text 3
+ * Inspiration     : Alura [www.alura.com.br]  HTML5 e CSS3 I: Suas primeiras páginas da web
+ * Language        : Portuguese
+ *
+ * Anotações do curso HTML5 e CSS3
+ *
+*/
+
+Aula 03
+
+<main>		: conteúdo principal da página
+<header>	: cabeçalho da página ou de uma região dela
+<footer>	: mesma ideia da tag <header> para o rodapé
+<aside>		: conteúdo auxiliar ao conteúdo principal, como links relacionados ao conteúdo
+<article>	: conteúdo que, por si só, já tem um sentido completo, como um post de um blog ou uma notícia
+<section>	: parte/seção de uma página ou texto
+
+Caracteres especiais por meio de entidades
+
+&euro;		: €
+&yen;		: ¥
+&pound;		: £
+&reg;		: ®
+&hearts;	: ♥
+&lt;		: <
+&gt;		: >
+
+

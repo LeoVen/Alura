@@ -1,0 +1,30 @@
+/*
+ * Doctype         : Example
+ * Created by      : Leonardo Vencovsky
+ * Together with   : niemand / ninguém / nadie / nobody ~~~~~~
+ * Date            : 21/01/2018
+ * Last modified   : 21/01/2018
+ * Editor          : Sublime Text 3
+ * Inspiration     : Alura [www.alura.com.br]  Git: Controle e compartilhe seu código aula 01
+ * Language        : Portuguese
+ *
+ * Anotações sobre Git
+ *
+*/
+
+Sistemas de versionamento atuam em servidores
+
+Alguns sistemas de controle de versão:
+	- CVS (Concurrent Versions System)
+	- SVN (Apache Subversion)
+
+O git é um sistema de controle de versões da segunda geração
+	- Controle de versão distribuído
+	- Offline
+
+O GitHub é uma plataforma online com controle de versão do git
+
+Para usar o GitHub é preciso baixar primeiro o Git
+
+Para clonar um projeto usamos, no prompt de comando: git clone htpps://github.com/user/project
+
