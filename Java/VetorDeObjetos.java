@@ -1,14 +1,6 @@
 /*
- * Doctype         : Example / Info
- * Created by      : Leonardo Vencovsky
- * Together with   : niemand / ninguém / nadie / nobody ~~~~~~
- * Date            : 17/01/2018
- * Last modified   : 21/01/2018
- * Editor          : Sublime Text 3
- * Inspiration     : Alura [www.alura.com.br]  Java I : Primeiros Passos aula 03
- * Language        : Portuguese
- *
  * Exemplificando como funciona um vetor de objetos dentro de uma classe
+ *
 */
 
 //Note que a classe public deve ter o mesmo nome que o arquivo .java
