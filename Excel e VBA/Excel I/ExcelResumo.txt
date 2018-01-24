@@ -1,0 +1,46 @@
+ *
+ * Doctype         : Info
+ * Created by      : Leonardo Vencovsky
+ * Together with   : niemand / ninguém / nadie / nobody ~~~~~~
+ * Date            : 23/01/2018
+ * Last modified   : 23/01/2018
+ * Editor          : Sublime Text 3
+ * Inspiration     : Alura [www.alura.com.br]  Excel: Domine o editor de planilhas mais famoso do mundo
+ * Language        : Portuguese
+ *
+ * Resumo de Excel
+ *
+
+Cont.valores() – Retorna o número de células preenchidas
+Contar.vazio() – Retorna o número de células que contém valor nulo (vazio)
+Cont.Num() – Retorna o número de células que contém valores numéricos
+Média() – Retorna o resultado da média do intervalo selecionado
+Máximo() – Retorna o maior valor do intervalo selecionado
+Mínimo() – Retorna o menor valor do intervalo selecionado
+
+Operadores lógicos
+
+=  igual
+<> diferente
+>  maior
+<  menor
+>= maior ou igual
+<= menor ou igual
+
+Operadores Booleanos
+
+E()   - Retorna verdadeiro se todos os argumentos forem verdadeiros
+OU()  - Retorna verdadeiro se ao menos um argumento for verdadeiro.
+        Falso somente se todos forem falsos.
+NÃO() - Inverte verdadeiro para falso e falso para verdadeiro.
+
+
+PROCV()
+
+valor_procurado      : valor que será localizado na primeira coluna da tabela de busca
+matriz_tabela        : região de células que contém as informações que queremos buscar
+núm_índice_coluna    : número da coluna da tabela que contém a informação que iremos buscar
+[procurar_intervalo] : 0 ou Falso      -> Busca Exata
+                       1 ou Verdadeiro -> Busca por faixa numérica
+
+Mostrará #N/D (Não disponível) caso não encontre valor.

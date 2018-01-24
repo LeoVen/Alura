@@ -100,3 +100,50 @@ protocolo://subdomínio.domínio:porta/caminho/recurso
 
 https://www.youtube.com:443/feed/subscriptions
 
+HTTP é Stateless. Ou seja, não guarda o estado dos pedidos anteriores.
+Cada pedido é individual e completo por si só.
+
+╔════════╗   HTTP Request   ╔════════╗
+║        ║ ---------------> ║        ║
+║ Client ║                  ║ Server ║
+║        ║ <--------------- ║        ║
+╚════════╝   HTTP Response  ╚════════╝
+
+HTTP Status Codes :
+
+100 - Info
+200 - Success
+300 - Redirecionamento
+400 - Erro do lado client
+500 - Erro do lado server
+
+Voltando para  URLs...
+
+https://www.youtube.com/results?search-query=bolinhos
+
+O ? na URL significa uma query e em seguida seus parâmetros.
+Neste caso:
+
+search-query = bolinhos
+
+Quando temos mais de um parâmetro, estes são separados por & :
+
+https://www.youtube.com/results?q=bolinhos&sp=CAE%253
+
+q = bolinhos
+sp = CAE%253
+
+
+
+Até agora vimos o método GET.
+
+O método POST :
+  - Envio de resultados
+  - Não aparecem na URL
+  - Casos de formulários onde as informações precisam ser protegidas
+
+Mas e GET?
+A vantagem de GET é que tendo a URL é possível realizar o mesmo processo por outras
+pessoas que possuam a mesma URL. Por exemplo fizemos uma busca no google e queremos
+que outras pessoas vejam os mesmos resultados que nós.
+
