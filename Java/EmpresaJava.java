@@ -1,12 +1,5 @@
 /* 
- * Doctype         : Example / Info
- * Created by      : Leonardo Vencovsky
- * Together with   : niemand / ninguém / nadie / nobody ~~~~~~
- * Date            : 17/01/2018
- * Last modified   : 21/01/2018
- * Editor          : Sublime Text 3
- * Inspiration     : Alura [www.alura.com.br]  Java I : Primeiros Passos aula 04
- * Language        : Portuguese
+ * Finalmente descobri como criar um vetor de objetos
  *
  * (at this time I was [ still am ..? ] a noob at Java programming)
  *  
@@ -22,7 +15,7 @@
  * Onde está "Lerite" na verdade quis dizer holerite, que 
  * na verdade está fora do contesto pois pensei em Cartão
  * Ponto ... Apenas ignore and go with the flow ~~~~~~
-*/
+ */
 
 //Note que a classe public deve ter o mesmo nome que o arquivo .java
 public class EmpresaJava {

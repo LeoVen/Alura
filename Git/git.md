@@ -1,13 +1,3 @@
->* Doctype        : Info
-* Created by      : Leonardo Vencovsky
-* Together with   : niemand / ninguém / nadie / nobody ~~~~~~
-* Date            : 21/01/2018
-* Last modified   : 23/01/2018
-* Editor          : Sublime Text 3
-* Inspiration     : Alura [www.alura.com.br]  Git: Controle e compartilhe seu código
-* Language        : Portuguese
-* Anotações sobre Git
-
 # Git
 
 >Sistemas de versionamento que atuam em servidores
@@ -61,7 +51,28 @@ Usamos o blame para consultar quem foi o autor que modificou certa linha
 
 	git blame index.html
 
-## O Ciclo básico do Git
+#### status
+
+Para ver o status do nosso repositório e seus arquivos:
+
+	git status
+
+#### ls-files
+
+Para listar todos os arquivos dentro de cada pasta:
+
+	git ls-files
+
+## git add + git commit
+
+### Configurando usuário
+
+Para configurarmos o usuário e e-mail:
+
+	git config --global user.name "Your Name"
+	git config --global user.mail "you@example.com"
+
+Usa-se --global se queremos configurar para o computador todo. Se o omitimos, faremos as configurações apenas para o atual repositório.
 
 ### Criando um repositório
 
@@ -72,13 +83,34 @@ Para criar uma pasta com o nome "NomeRepositório". Em seguida precisamos inicia
 	cd NomeRepositório
 	git init
 
-## Mais comandos
+#### add
 
-Para listar todos os arquivos dentro de cada pasta:
+Para adicionar arquivos ao rastreamento e que este entre na Stagin Area na hora de atualizar o repositório:
 
-	git ls-files
+	git add arquivo.html
 
-Para ver o status do nosso repositório:
+Ver também:
 
-	git status
+	git add -i
 
+#### commit
+
+Para atualizarmos o repositório com os novos arquivos e/ou modificados (adicionados pelo add) devemos usar o git commit:
+
+	git commit -m "Uma menssagem aqui"
+
+Note que a flag -m significa que o que vem a seguir será uma menssagem que irá descrever as alterações
+
+## O ciclo básico
+
+Existem 3 seções de um Git:
+
+* Working Tree (Working Directory)
+* Staging Area (Index)
+* .git Directory (Repository) (HEAD)
+
+>Ver imagem
+
+### Working Directory
+
+O *Working Directory* pode estar "*clean*" quando não há diferença entre os arquivos armazenados no repositório e os arquivos atualmente no repositório sendo trabalhado. Ou pode estar 

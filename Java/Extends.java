@@ -1,12 +1,4 @@
 /*
- * Doctype         : Example / Training / Info
- * Created by      : Leonardo Vencovsky
- * Together with   : niemand / ninguém / nadie / nobody ~~~~~~
- * Date            : 19/01/2018
- * Last modified   : 21/01/2018
- * Editor          : Sublime Text 3
- * Inspiration     : Alura [www.alura.com.br] Java II : Orientação a Objetos aula 01
- * Language        : Portuguese
  *
  * Conceitos de orientação a objetos mais avançados
  *
@@ -42,7 +34,7 @@
  */
 
 
-public class ExtendsJava {
+public class Extends {
 
 	public static void main(String[] args) {
 

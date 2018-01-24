@@ -1,26 +1,21 @@
 /* 
- * Status          : Training
- * Created by      : Leonardo Vencovsky
- * Together with   : niemand / ninguém / nadie / nobody ~~~~~~
- * Date            : 22/01/2018
- * Last modified   : 22/01/2018
- * Editor          : Sublime Text 3
- * Inspiration     : Youtube [https://www.youtube.com/watch?v=qqYOYIVrso0] 4.7: Introduction to Polymorphism - The Nature of Code
- * Language        : Portuguese
  *
  * Essa classe busca aprofundar as noções de Polymorphism
-*/
+ *
+ */
 
 public class Polymorphism {
 
 	public static void main(String[] args) {
 		
+		//Criando um vetor de objetos
 		Animal[] kingdom = new Animal[100];
-
+		//Instanciando
 		for (Animal i : kingdom) {
 			i = new Animal();
 		}
 
+		//Polimorfismo
 		for (int i = 0; i < kingdom.length; i++) {
 			if (i % 2 == 0 && i % 4 != 0) {
 				kingdom[i] = new Parrot();
@@ -33,6 +28,7 @@ public class Polymorphism {
 			}
 		}
 
+		//Provando que ocorreu o polimorfismo
 		for (Animal i : kingdom) {
 			System.out.println("\n" + i.getName());
 			i.jump();

@@ -1,12 +1,4 @@
 /*
- * Doctype         : Training
- * Created by      : Leonardo Vencovsky
- * Together with   : niemand / ninguém / nadie / nobody ~~~~~~
- * Date            : 23/01/2018
- * Last modified   : 23/01/2018
- * Editor          : Sublime Text 3
- * Inspiration     : Alura [www.alura.com.br] Java II : Orientação a Objetos aula 02 (exercícios)
- * Language        : Portuguese
  *
  * Exercícios Alura
  *

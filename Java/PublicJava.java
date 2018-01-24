@@ -1,12 +1,5 @@
 /* 
- * Doctype         : Example / Info
- * Created by      : Leonardo Vencovsky
- * Together with   : niemand / ninguém / nadie / nobody ~~~~~~
- * Date            : 18/01/2018
- * Last modified   : 21/01/2018
- * Editor          : Sublime Text 3
- * Inspiration     : Alura [www.alura.com.br] Java I : Primeiros Passos aula 05 & aula 07
- * Language        : English
+ * Modificadores de acesso e introdução aos conceitos de OOP
  *
  * Here we'll see the the access modifiers of java at work
  * Private : only code inside the class can have access to the method or variable
@@ -34,7 +27,7 @@
  * - Static variables don't use this.
  * - To use a static method you must do: Class.method()
  * - Static methods can only use static variables
-*/
+ */
 
 //This class uses Data.java so you must have it compiled
 public class PublicJava {
