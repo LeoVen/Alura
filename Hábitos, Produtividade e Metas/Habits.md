@@ -105,3 +105,4 @@ Sonhe grande, mas começe pequeno.
 Hábitos chave impactam direta ou indiretamente outros hábitos, assim como nos dão grandes benefícios. Por exemplo cochilar. Se durante o almoço, entre os turnos de trabalho cochilamos e nos sentimos melhor, acaba que conseguimos desenvolver outros hábitos com mais facilidade e trabalhamos melhor. Pode-se dizer que cochilar é umm hábito chave.
 
 >Ao ter um hábito-chave, é possível ver que outras áreas da nossa vida podem melhorar.
+
