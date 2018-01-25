@@ -8,6 +8,8 @@
 ## O que são hábitos?
 >Hábitos são sequências de ações aprendidas depois de muita repetição, até que passam a ser executadas com o mínimo de esforço mental. - Wolfram Schultz
 
+### Loop do Hábito
+
 ##### Cue -> Routine -> Reward -> Cue ...
 1. *Cue* (Deixa)
 2. *Routine* (Rotina)
@@ -91,3 +93,15 @@ Um dia nos sentimos bem, outros já nem tanto. Um dia trabalhamos duro, outros c
 >Um novo hábito pode ser incorporado entre 18 a 254 dias.
 <br>
 Construir novos hábitos não é um processo de "tudo ou nada". É preciso ter flexibilidade.
+
+Sonhe grande, mas começe pequeno.
+
+>Comece pequeno. - James Clear
+
+## Hábitos Chaves (Keystone Habits)
+
+### Charles Duhigg
+
+Hábitos chave impactam direta ou indiretamente outros hábitos, assim como nos dão grandes benefícios. Por exemplo cochilar. Se durante o almoço, entre os turnos de trabalho cochilamos e nos sentimos melhor, acaba que conseguimos desenvolver outros hábitos com mais facilidade e trabalhamos melhor. Pode-se dizer que cochilar é umm hábito chave.
+
+>Ao ter um hábito-chave, é possível ver que outras áreas da nossa vida podem melhorar.
