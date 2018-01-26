@@ -106,3 +106,40 @@ Hábitos chave impactam direta ou indiretamente outros hábitos, assim como nos 
 
 >Ao ter um hábito-chave, é possível ver que outras áreas da nossa vida podem melhorar.
 
+1. É importante conhecer a si mesmo para ter um Loop do Hábito ideal.
+2. Eliminar a mentalidade Perfeccionista. Ela pode nos prejudicar pois muitas vezes a simplicidade é favorecida.
+3. Abrir a mente para coisas novas.
+4. Não dar desculpas. Para qualquer coisa. É importante reconhecer o erro.
+5. Um gestor de finanças é muito bom também para controlarmos nossos gastos.
+
+Criar metas pequenas e a curto prazo torna a criação de novos hábitos menos complexa e mais tranquila e alcança-las gera uma sensação boa de missão cumprida e motiva para ir para o próximo nível.
+
+## Procrastinação
+
+### Características
+
+A procrastinação nos impede de fazer algo importante ou urgente. Ocorre quando há uma __falta de planejamento__ e __organização__.
+
+### Como evitar
+
+Para combater isso podemos usar diversas ferramentas disponíveis na internet, cirando um sumário de tarefas, listagens ou até textos explicando detalhadamente o que deve ser feito. Ser específico nessa hora é muito importante para conseguirmos realizar aquilo que realmente precisa ser feito.
+
+Outro ponto importante é criar uma ordem de prioridade para cada tarefa. Assim podemos ver a sequência de tarefas que devemos fazer, evitando não fazer tarefas mais importantes.
+
+### Como combater
+
+Neutralizar os pensamentos destrutivos. Se acolhemos esses pensamentos, as chances de não fazermos algo ou falharmos, aumenta. Por isso precisamos sempre pensar que a realização dessas tarefas podem trazer recompensas de diversas formas, e ao terminarmos algo sentiremos o sabor da conquista. Devemos então aproveitar esses momentos pois são eles quem nos motivarão a realizar os próximos passos.
+
+## Recompensas
+
+É aquilo que esperamos ganhar quando fazemos uma determinada ação.
+
+* Qual foi o estímulo?
+* O que foi feito?
+* O que foi ganho?
+
+Para cada tarefa podemos associar uma recompensa. Assim, quando concluímos nossas tarefas, ou etapas dessas tarefas, podemos nos recompensar com alguma coisa, como, por exemplo, comprar um sorvete, ir ao shopping ou algo que nos faça bem podendo ser coisas simples.
+
+>A vida não é só trabalhar. Devemos também disfrutar nosso lazer.
+
+Uma vez ou outra é muito importante levarmos um tempo para relaxar. Sendo por meio da leitura, do esporte, conversas e entre outros. Assim podemos resfriar a cabeça.
