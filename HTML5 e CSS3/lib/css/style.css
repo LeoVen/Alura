@@ -11,3 +11,49 @@ article footer p a {
 article footer p a:hover {
 	color: #0891d1;
 }
+
+article ul li {
+	display: inline-block;
+}
+
+header ul li nav ul li a {
+	text-decoration: none;
+	color: #ED4545;
+	transition: 0.5s;
+	padding: 10px;
+	border: #ED4545 1px solid;
+	margin: 10px;
+}
+
+header ul li nav ul li a:hover {
+	color: #FFFFFF;
+	background-color: #ED4545;
+	/*border: #FFFFFF 1px solid;*/
+	box-shadow: 4px 4px 5px grey;
+}
+
+header {
+	background-color: #fafafa;
+	padding: 20px;
+}
+
+header ul li {
+	display: inline-block;
+}
+
+header img {
+	height: 4em;
+	width: auto;
+	margin-right: 20px;
+}
+
+.vertical-align {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	  -webkit-box-align: center;
+		 -ms-flex-align: center;
+			align-items: center;
+}
