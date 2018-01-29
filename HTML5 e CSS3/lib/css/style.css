@@ -2,6 +2,14 @@ body {
 	font-family: "Open Sans Condensed", sans-serif;
 }
 
+body, .no {
+	padding: 0;
+}
+
+body, header, ul {
+	margin: 0;
+}
+
 article footer p a {
 	text-decoration: none;
 	color: #bc2020;
@@ -16,16 +24,18 @@ article ul li {
 	display: inline-block;
 }
 
-header ul li nav ul li a {
+.nav ul li a {
+	display: inherit;
 	text-decoration: none;
 	color: #ED4545;
 	transition: 0.5s;
 	padding: 10px;
 	border: #ED4545 1px solid;
 	margin: 10px;
+	border-radius: 4px;
 }
 
-header ul li nav ul li a:hover {
+.nav ul li a:hover {
 	color: #FFFFFF;
 	background-color: #ED4545;
 	/*border: #FFFFFF 1px solid;*/
@@ -35,6 +45,9 @@ header ul li nav ul li a:hover {
 header {
 	background-color: #fafafa;
 	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 header ul li {
@@ -57,3 +70,4 @@ header img {
 		 -ms-flex-align: center;
 			align-items: center;
 }
+

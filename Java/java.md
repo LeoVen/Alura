@@ -1,7 +1,5 @@
 # Java
 
-## Anotações sobre a linguagem java
-
 Fonte : https://loiane.training/course/java-basico/
 
 ## Index
