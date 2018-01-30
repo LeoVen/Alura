@@ -11,7 +11,7 @@ int main(int argc ,char **argv)
 
 	int random[4];
 
-	int i, num;
+	int i, j, num;
 	FILE *F;
 
 	F = fopen ("LeroLero.txt", "w+");
@@ -150,22 +150,31 @@ int main(int argc ,char **argv)
 			"do remanejamento dos quadros funcionais."
 		};
 
-	printf("Quantas Frases voce deseja formar?\n");
-	scanf("%d",&num);		
+	printf("Quantos Parágrafos você deseja formar?\n");
+	scanf("%d",&num);	
 	
 	char final[360];
-    
+	int frases;
+	
+    setlocale(LC_ALL, "Portuguese");
+
     for ( i = 0; i < num; i++)
 	{
 		final[0] = '\0';
-		random[0] = (rand() % 30);
-		random[1] = (rand() % 30);
-		random[2] = (rand() % 30);
-		random[3] = (rand() % 30);
-		strcat(final, tab0[random[0]]);
-		strcat(final, tab1[random[1]]);
-		strcat(final, tab2[random[2]]);
-		strcat(final, tab3[random[3]]);
+		int frases = rand() % 5;
+
+		for (j = 0; j < frases; j++) {
+			random[0] = (rand() % 30);
+			random[1] = (rand() % 30);
+			random[2] = (rand() % 30);
+			random[3] = (rand() % 30);
+			strcat(final, tab0[random[0]]);
+			strcat(final, tab1[random[1]]);
+			strcat(final, tab2[random[2]]);
+			strcat(final, tab3[random[3]]);
+			strcat(final, " ");
+		}
+		
 		fputs(final,F);
 		fputc('\n', F);
 	}

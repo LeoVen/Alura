@@ -4,6 +4,11 @@
  *
  */
 
+/**
+ * Classe simples sobre data
+ * @author Leonardo Vencovsky
+ *
+ */
 public class Data {
     private int dia;
     private int mes;
@@ -25,6 +30,11 @@ public class Data {
         return this.dia+"/"+this.mes+"/"+this.ano;
     }
 
+    /**
+    * Um método simples que retorna a data formatada.
+    *
+    * @return Retorna uma string no formato dd/mm/aaaa.
+    */
     public String getStringData() {
 
         if (this.dia < 10) {
@@ -40,8 +50,33 @@ public class Data {
         return this.aux_dia + this.dia + "/" + this.aux_mes + this.mes + "/" + this.ano;
     }
 
+    /**
+    * Classe que adiciona meses, dias e anos. Não faz reajuste automatico.
+    *
+    * @param dia Quantos dias serão adicionados ou subtraídos
+    * @param mes Quantos meses serão adicionados ou subtraídos
+    * @param ano Quantos anos serão adicionados ou subtraídos
+    *
+    * @return Retorna verdadeiro se foi possível adicionar os valores à Data,
+    *                 caso contrário retorna falso.
+    */
+    public boolean addDMY(int dia, int mes, int ano) {
+        if (isDataViavel(this.dia + dia, this.mes + mes, this.ano + ano)) {
+            this.dia += dia;
+            this.mes += mes;
+            this.ano += ano;
+            return true;
+        } else {
+            System.out.println("Invalid parameters");
+            return false;
+        }
+    }
+
     private boolean isDataViavel(int dia, int mes, int ano) {
         if (dia <= 0 || mes <= 0) {
+            return false;
+        }
+        if (mes > 12) {
             return false;
         }
 
