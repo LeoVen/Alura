@@ -8,9 +8,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>HTML5 e CSS3 I: Suas primeiras páginas da Web</title>
-		<link rel="stylesheet" href="lib/css/style.css">
 		<!-- <link rel="stylesheet" href="lib/css/EricMeyer.css"> -->
 		<!-- <link rel="stylesheet" href="lib/css/normalize.css"> -->
+		<link rel="stylesheet" href="lib/css/style.css">
 		<script type="text/javascript" src="lib/js/main.js"></script>
 	</head>
 	<body>
@@ -27,37 +27,61 @@
 			</ul>
 			<nav class="nav">
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Sobre</a></li>
-					<li><a href="#">Serviços</a></li>
-					<li><a href="#">Clientes</a></li>
-					<li><a href="#">Contato</a></li>
+					<li><a class="btn header" href="#">Home</a></li>
+					<li><a class="btn header" href="#">Sobre</a></li>
+					<li><a class="btn header" href="#">Serviços</a></li>
+					<li><a class="btn header" href="#">Clientes</a></li>
+					<li><a class="btn header" href="#">Contato</a></li>
 				</ul>
 			</nav>
 		</header>
 		<main>
 
-			<article>
-				<h2>O essencial do design responsivo</h2>
-				<time class="2016-01-19">19 de Janeiro de 2018</time>
-				<p>Design responsivo tem ganho cada vez mais atenção como técnica de desenvolvimento de páginas web para dispositivos móveis</p>
-				<p><a href="#">Leia mais</a></p>
-				<footer>
-					<p>Tags:</p>
-					<p><a href="#">design</a>, <a href="#">responsivo</a>, <a href="#">mobile</a>, <a href="#">css3</a></p>
-				</footer>
-			</article>
+			
 
-			<article>
-				<h2>Conheça meus sites</h2>
-				<ul>
-					<li><a href="#">A casa branca</a></li>
-					<li><a href="#">The mole</a></li>
-					<li><a href="#">War</a></li>
-					<li><a href="#">Do Online Now</a></li>
-					<li><a href="#">Switch</a></li>
-				</ul>
-			</article>
+			<section class="section1">
+				<article>
+					<h2>O essencial do design responsivo</h2>
+					<time class="2016-01-19">19 de Janeiro de 2018</time>
+					<p>Desde ontem a noite o último pull request desse SCRUM corrigiu o bug na compilação de templates literais. Explica pro Product Onwer que a normalização da data otimizou a renderização do fluxo de dados de forma retroativa no server. A equipe de suporte precisa saber que o último pull request desse SCRUM corrigiu o bug da execução de requisições effcientes na API.</p>
+					<p>Nesse pull request, o módulo de recursão paralela superou o desempenho dos parametros passados em funções privadas. Desde ontem a noite o gerenciador de dependências do frontend facilitou a resolução de conflito dos parametros passados em funções privadas. Explica pro Product Onwer que a disposição dos elementos HTML causou o bug dos parametros passados em funções privadas.</p>
+					<p><a class="btn warning" href="#">Leia mais</a></p>
+					<footer>
+						<p>Tags:</p>
+						<p><a href="#">design</a>, <a href="#">responsivo</a>, <a href="#">mobile</a>, <a href="#">css3</a></p>
+					</footer>
+				</article>
+
+				<article>
+					<h2>Conheça meus sites</h2>
+					<ul>
+						<li><a href="#">A casa branca</a></li>
+						<li><a href="#">The mole</a></li>
+						<li><a href="#">War</a></li>
+						<li><a href="#">Do Online Now</a></li>
+						<li><a href="#">Switch</a></li>
+					</ul>
+				</article>
+			</section>
+
+			<section class="section2">
+				<aside>
+					<p>2018</p>
+					<ul>
+						<li><a class="btn primary w100" href="#">Janeiro</a></li>
+					</ul>
+					<p>2017</p>
+					<ul>
+						<li><a class="btn info w100" href="#">Dezembro</a></li>
+						<li><a class="btn info w100" href="#">Novembro</a></li>
+						<li><a class="btn info w100" href="#">Outubro</a></li>
+						<li><a class="btn info w100" href="#">Setembro</a></li>
+						<li><a class="btn info w100" href="#">Agosto</a></li>
+						<li><a class="btn info w100" href="#">Julho</a></li>
+					</ul>
+				</aside>
+			</section>
+
 		</main>
 		
 		
