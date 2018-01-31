@@ -147,3 +147,102 @@ A vantagem de GET é que tendo a URL é possível realizar o mesmo processo por 
 pessoas que possuam a mesma URL. Por exemplo fizemos uma busca no google e queremos
 que outras pessoas vejam os mesmos resultados que nós.
 
+GET: Receber dados      DELETE: Remover um recurso
+POST: Enviar dados      PUT: Atualizar um recurso
+Outros:
+HEAD,  OPTIONS, CONNECT, etc
+
+WebServices
+
+Comunicação por XML ou JSON. Ao fazer GET dessas informações tudo passará por um parsing que
+pegará as informações relevantes de acordo com uma especificação (WSDL ou WADL).
+
+Via cabeçalho HTTP especificamos como queremos receber as informações (XML ou JSON).
+Accept: text/html
+Accept: text/css .. Accept: */*
+
+Arquitetura REST
+
+                       Recurso
+                        (URI)
+                          ^
+                         / \
+                        /   \
+                       /     \
+                      /       \
+                     /         \
+                    /___________\
+                   / \   / \   / \
+                  /   \ /___\ /   \
+                 /     \     /     \
+                /       \   /       \
+               /         \ /         \
+   Operações  /___________v___________\  Representação
+ (GET, POST, PUT...)                  (JSON, XML, HTML...)
+
+No cabeçalho: tipo/subtipo
+
+Tipos: text/image/application/audio/video
+       text: text/plain, text/css, text/html, text/javascript ...
+       image: image/gif, image/png, image/jpeg ...
+       audio:
+São chamados de MIME Type (Multipurpose Internet Mail Extensions)
+
+
+        HTTP2
+
+HTTP2: Não envia mais texto puro. As informações são enviadas de forma binária.
+       Por padrão os dados são criptografados (TLS).
+GZIP: Algoritmo de zipar o conteúdo enviado. Diminui a quantidade de bytes trafegando.
+HPACK: Compressão dos dados do cabeçalho.
+
+        Binário > Zipar > Criptografar
+
+No HTTP2 não é mais preciso enviar os mesmos headers quando eles são os mesmos em diferentes
+solicitações. Isso se chama Headers Stateful.
+
+Server Push :
+
+                           ╔════════╗   HTTP Request   ╔════════╗
+                           ║        ║ ---------------> ║        ║
+                           ║ Client ║                  ║ Server ║
+                           ║        ║ <--------------- ║        ║
+                           ╚════════╝   HTTP Response  ╚════════╝
+                               |                           |            HTTTP 1.1
+                    index.html | ------------------------> | _
+                               |                           |  | Há uma certa demora
+                               |                           |  |
+                               | <------------------------ | _|
+                               |                           |
+           próximoRecurso.html | ------------------------> | _
+                               |                           |  | Cada recurso é enviadoo um por um
+                               | <------------------------ | _|
+                               |                           |
+                               |                           |            HTTP 2
+                               |                           |
+                               |                           |      Já com Server Push é diferente.
+                    estilo.css | ------------------------> |      Os recursos são enviados e
+                     jquery.js | ------------------------> |      recebidos a todo momento.
+                               | ------------------------> |
+                               | <------jquery.js--------- |
+                       main.js | ------------------------> |      Assim que index.html é carregado
+                               | <------estilo.css-------- |      é enviado um request a todos seus
+                      logo.png | ------------------------> |      recursos com antecedência, 
+                               | <------logo.png---------- |      agilizando o processo e deixando
+                   imagem.jpeg | ------------------------> |      de fazer um requeste a cada
+                               | <------main.js----------- |      recurso.
+                               |                           |
+                               |                           |
+
+
+Multiplexing : Requisições e respostas são paralelas.
+
+Keep ALive: Com a mesma conexão TCP é possível enviar várias requisições HTTP em paralelo (HTTP2).
+
+TCP (Transmission Control Protocol) :
+
+           ╔══════╦═════╦══════╦═════╦═════════╗
+           ║ HTTP ║ FTP ║ SMTP ║ SMB ║ etc ... ║ - Protocolos
+           ╠══════╩═════╩══════╩═════╩═════════╣
+           ║                 TCP               ║
+           ╚═══════════════════════════════════╝
