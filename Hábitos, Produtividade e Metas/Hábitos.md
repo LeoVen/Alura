@@ -143,3 +143,6 @@ Para cada tarefa podemos associar uma recompensa. Assim, quando concluímos noss
 >A vida não é só trabalhar. Devemos também disfrutar nosso lazer.
 
 Uma vez ou outra é muito importante levarmos um tempo para relaxar. Sendo por meio da leitura, do esporte, conversas e entre outros. Assim podemos resfriar a cabeça.
+
+Ler
+The Power of Habit Book by Charles Duhigg
