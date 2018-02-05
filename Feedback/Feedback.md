@@ -35,9 +35,29 @@ Quando sabemos receber melhor um feedback os relacionamentos evoluem, a nossa au
 
 Feedbacks nem sempre são fáceis de lidar, mas a partir do momento em que temos clareza sobre o porquê agimos ou reagimos de uma determinada maneira, podemos começar a fazer uma rota inversa, buscar a razão do porque não nos sentimos confortáveis com o que foi dito e a partir disso pensar no que podemos fazer de diferente para lidar melhor com o feedback.
 
+## Gatilhos de Feedback
+
+Gatilhos são uma espécie de mapa que pode nos auxiliar a localizar a raiz do problema. São essenciais para administrarmos melhor nossas reações e encarar conversas de feedback com inteligência.
+
+### Gatilho da verdade: quando um feedback é errado, injusto ou inútil.
+
+É importante considerar que administrar gatilhos de verdade não é fingir que há alguma coisa para aprender nem dizer que alguma coisa está certa quando você acha que está errada. Trata-se de reconhecer que as coisas são sempre mais complicadas do que parecem.
+
+### Gatilho do relacionamento: quando o feedback é influenciado pela relação com outras pessoas
+
+Todo feedback é temperado pela relação que existe entre quem dá e quem recebe e nossas reações podem se basear naquilo que acreditamos sobre quem dá o feedback. Os gatilhos de relacionamento podem provocar mágoa, desconfiança e às vezes raiva. 
+
+* Ver outros gatilhos.
+
 De forma geral, o feedback pode chegar de 3 maneiras:
 
 * __Reconhecimento__: “Gostei muito da maneira que o projeto foi conduzido.”
 * __Orientação__: “Há uma maneira melhor de lidar com isso para melhorar a sua relação com o cliente.”
 * __Avaliação__: “Deste jeito, não dá mais para trabalhar. Pode parar por aqui.”
+
+>Entender antes de mais nada.
+
+Enxergar nossos pontos cegos podem ajudar na hora de dar feedbacks e receber feedbacks, assim como na hora de conversar com as pessoas. A análise de nós mesmos pode ajudar a entender como as outras pessoas nos veem.
+
+## Influencias Internas
 

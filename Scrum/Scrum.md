@@ -95,3 +95,101 @@ Uma maneira de começar com uma reunião de retrospectiva é cada um escrever em
 [Outras formas de fazer uma retrospectiva](http://www.funretrospectives.com/)
 
 >A retrospectiva é a maior oportunidade, em cada Sprint, de promovermos melhorias no processo, no time e no andamento do projeto que está sendo desenvolvido.
+
+## Daily Scrum
+
+* O que fez?
+* O que fará?
+* Quais problemas enfrentados?
+
+Participam Desenvolvedores, Scrum Master e Product Owner, com duração máxima de 15 minutos.
+
+### Quando fazer a Daily Scrum
+
+* Sempre no mesmo horário
+* Sempre no mesmo lugar
+
+O lugar fica a critério da empresa. Já o horário (como uma sugestão) é preferível evitar os extremos do dia pois pode ser que alguns membros acabam saindo antes ou entrando mais cedo, tendo que tornar esse horário mais flexível.
+
+## Planning Meeting
+
+Participam Desenvolvedores, Scrum Master e Product Owner.
+
+Esse é o momento em que se inicia a Sprint. A Planning Meeting limita-se a 5% da Sprint, e é um processo de planejamento. O time se reúne com o Scrum Master, que trabalha mais a parte da facilitação, os desenvolvedores, para pensarem na parte mais técnica de como realizar certas tarefas. Nisso, o Product Owner é responsável por priorizar um grupo de itens que agregue o máximo de valor possível.
+
+### Como implementar
+
+O P.O. chega na reunião com o Product Backlog, lista ordenada ou priorizada dos itens a serem feitos durante o projeto. A ideia é sair da reunião com a lista priorizada dos itens e sub-itens técnicos que o time está comprometido a fazer durante a Sprint em questão (o Sprint Backlog).
+
+Uma vez que o Sprint Backlog foi decidido, o time olha para as histórias selecionadas e cria uma meta: uma frase que exprime o maior valor que esse Sprint vai trazer para o usuário!
+
+### Resumidamente
+
+* Enquanto não passar um pouco do que o time consegue fazer na Sprint:
+ * P.O. explicando o item de maior prioridade da visão de negócios;
+ * Desenvolvedores tiram dúvidas de entendimento e o discutem tecnicamente;
+ * Desenvolvedores atribuem uma estimativa de esforço à história.
+* Desenvolvedores e P.O. negociam o Sprint Backlog
+* Time todo monta uma meta para a Sprint
+
+## Product Backlog e Sprint Backlog
+
+Cada item do Backlog deve ser algo que agregue valor ao usuário, seja lá em que formato.
+
+### Sugestão: aplicar o *Story*
+
+A história é um item que agrega valor ao usuário, escrita de forma bem diferente ao caso de uso, deve ter um título, um porquê e para quem esse item é importante. O template da história pode ser feito com um cartão de papel. Ela serve para convidar o desenvolvedor a tirar dúvidas sobre os detalhes de uma tarefa. A ideia é que ela seja legível e fluente.
+
+#### Tasks
+
+Tarefas são subitens de uma história, mais focados na parte técnica. Eles servem para conseguirmos trabalhar paralelamente sobre uma história e, assim, aumentar a velocidade de produção de valor para o usuário.
+
+Exemplo:
+
+* __para__: "motivar meu time a bater a meta de vendas"
+* __como__: "Camila, gerente comercial"
+* __quero__: "que toque uma musica quando atingir a meta de vendas do dia"
+
+Outro exemplo fora do ambiente de trabalho:
+
+__Sala de Estar__
+
+* __Para...__ receber meus amigos para degustar queijos e vinhos com conforto
+* __Eu, como...__ morador
+* __Quero...__ uma sala de estar de 20m², com carpete de madeira, grandes almofadas soltas pelo chão, uma mesinha central retrátil, uma mini adega para 6 vinhos e sistema de som ambiente.
+
+### Product Backlog
+
+O artefato padrão no Scrum é o Product Backlog, uma lista ordenada, que prioriza todos os itens de negócio e histórias até o final do projeto. Quem cuida dessa lista é quem tem o domínio sobre o que entra e sai, e essa pessoa, o *Product Owner*, também estabelece prioridades nessa lista.
+
+Se algo perde importância no Backlog o item acaba ficando para baixo na lista de prioridade, e isso vai sendo deixado de lado até que o projeto acabe. Se ainda for interessante realizar itens e tarefas que ficaram para fora do prazo estimado, pode ser feito um adendo de contrato, prosseguindo-se a execução desses itens caso agregarem valor suficiente.
+
+#### Grooming
+
+O processo de quebrar histórias muito grandes em menores de maneira que cada uma siga agregando valor ao usuário final é chamada de *Grooming* do *Product Backlog*.
+
+### Sprint Backlog
+
+O Sprint Backlog, diferentemente, é do time como um todo, e a regra é que a equipe pode renegociar prioridades (lembrando que o time é composto de desenvolvedores, P.O. e Scrum Master). Assim, é possível mudar o escopo de maneira a agregar valor - essa é uma decisão interna do time.
+
+O Sprint Backlog possui a regra de que o cliente não pode dar sua opinião. Se algo entrou para ser feito nessa Sprint, então é porque são itens de maior prioridade. Se o cliente pensa em mexer nisso é porque o P.O. não conversou direito com ele, ou as prioridades não estão bem estabelecidas, e ele muda de opinião o tempo inteiro.
+
+### Quem altera os Backlogs
+
+* *Product Backlog*: apenas o P.O. altera, mas todos podem influenciá-lo, tanto desenvolvedores, scrum master e clientes.
+* *Sprint Backlog*: o cliente não pode alterá-lo ou influenciá-lo. Apenas o time altera esse backlog, renegociando internamente o escopo quando necessário, quebrando melhor as histórias em tarefas, etc.
+
+### Cancelar Sprint
+
+A única razão pela qual se faz um cancelamento de Sprint no Scrum é quando o Sprint Backlog se altera tanto a ponto da meta não fazer mais sentido. Os cancelamentos também podem ocorrer no caso de problema de comunicação grave, um cliente muito indeciso ou eventualmente outro tipo de razão externa, como uma justificativa legal. No entanto tais situações não são comuns ou não devem ser recorrentes.
+
+### Resumidamente
+
+* O *Product Backlog* é a lista priorizada das histórias que agregam valor para o cliente. São histórias que envolvem o projeto inteiro. Somente o P.O. mexe nele, mas todo o time pode palpitar.
+
+* O *Sprint Backlog* engloba histórias e tarefas que estão no topo das prioridades. Conforme os itens entram nele, já quebramos as histórias em tarefas. No Sprint Backlog o time altera essas tarefas sem que o cliente palpite sobre elas.
+
+Enquanto o *Product Backlog* foca no que agrega valor para o usuário (histórias), o *Sprint Backlog* acrescenta a isso as subdivisões técnicas das histórias (tarefas), já que ele já foca no planejamento para execução das histórias.
+
+## Scrum Master
+

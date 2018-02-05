@@ -15,6 +15,5 @@ Qualquer regex precisa ser interpretada por meio de uma regex engine. Esse motor
 * Análise de arquivos de texto e extração de dados para, por exemplo, gravar no banco de dados
 * Substituindo os valores de um texto para limpar, reformatar ou alterar o conteúdo
 
-<hr>	
-
 Dentro de uma classe, apenas os caracteres \ - ^ são realmente considerados meta-chars.
+
