@@ -59,5 +59,13 @@ De forma geral, o feedback pode chegar de 3 maneiras:
 
 Enxergar nossos pontos cegos podem ajudar na hora de dar feedbacks e receber feedbacks, assim como na hora de conversar com as pessoas. A análise de nós mesmos pode ajudar a entender como as outras pessoas nos veem.
 
-## Influencias Internas
+### Gatilho de Identidade: quando um feedback abala nossa identidade
+
+Os Gatilhos de identidades não estão focados nem no feedback nem no emissor. Todos os gatilhos de identidade são sobre nós. Certo ou errado, sábio ou insensato, alguma coisa no feedback faz com que nossa identidade, ou seja, a percepção de quem somos fique abalada.
+
+[5 dicas de como lidar com críticas](https://saiadolugar.com.br/5-excelentes-dicas-sobre-como-lidar-com-criticas/)
+
+### Identidade de Crescimento
+
+>Ao invés de sermos uma pintura em óleo em uma moldura dourada, somos um esboço à lápis de um momento
 

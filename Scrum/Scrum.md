@@ -4,6 +4,22 @@ O Scrum é um framework ágil e sua principal característica é trabalhar com t
 
 O Scrum tem uma forte metáfora com Rugby, onde todos os jogadores estão coordenando-se para sempre ter a posse da bola e ao final atingir o objetivo onde todos são considerados como um só. O time é visto como um só indivíduo.
 
+## Index
+
+* [Team](#team)
+* [Time-boxes e Sprints](#time-boxes-e-sprints)
+* [Ciclo do Framework](#ciclo-do-framework)
+* [Review Meeting](#-review-meeting-)
+* [Retrospectiva](#retrospectiva)
+* [Daily Scrum](#daily-scrum)
+* [Planning Meeting](#planning-meeting)
+* [Product Backlog e Sprint Backlog](#product-backlog-e-sprint-backlog)
+* [Scrum Master](#scrum-master)
+* [Product Owner](#product-owner)
+* [Desenvolvedores](#desenvolvedores)
+* [O dia-a-dia de cada um](#o-dia-a-dia-de-cada-um)
+* [O time](#o-time)
+
 ## Team
 * Product Owner
 * Scrum Master
@@ -192,4 +208,88 @@ A única razão pela qual se faz um cancelamento de Sprint no Scrum é quando o 
 Enquanto o *Product Backlog* foca no que agrega valor para o usuário (histórias), o *Sprint Backlog* acrescenta a isso as subdivisões técnicas das histórias (tarefas), já que ele já foca no planejamento para execução das histórias.
 
 ## Scrum Master
+
+Uma das responsabilidades do Scrum Master é ser um facilitador das reuniões, ajudando o time a se comportar bem, com foco, auxiliando a entender o propósito em pauta. No fundo, ele explica o que é o Scrum e como cada encontro desses colabora para que o processo fique mais redondo e amarrado, tornando-o mais interessante de se trabalhar.
+
+Apesar do Scrum Master fazer o papel de facilitador, ele ensina as pessoas a tirarem o maior proveito possível das reuniões. A facilitação é bastante presente, principalmente no início. A ideia é que com o tempo o time não necessite tanto da presença do Scrum Master, pois ele aprende a lidar com os time-boxes.
+
+O papel do Scrum Master é facilitar o ensino sobre o que é o Scrum e as responsabilidades de cada uma das partes envolvidas. Não se trata de ser necessariamente o chefe, mas sim um líder servidor, aquele que está disponível para ajudar e facilitar a comunicação. Sua terceira função é mais prática, fácil e tangível, que é resolver impedimentos.
+
+### Impedimentos
+
+Uma das responsabilidades do Scrum Master é lidar com impedimentos, e é importante diferenciar o que é impendimento do que é problema. Qualquer situação que esteja atrapalhando é um problema. Passa-se da categoria problema para impedimento quando o time tenta resolver uma situação mas não é capaz. Assim, mesmo dividindo com demais colegas na Daily, o time falha em lidar com a situação. Não compensa para o time, como um todo, parar para resolver essa questão ou realocar algumas pessoas produtivas para lidar com isso.
+
+Portanto, o Scrum Master é responsável por resolver impedimentos que o time tentou solucionar, mas não conseguiu. Um bom Scrum Master trabalha para que os impedimentos de hoje não se tornem problemas amanhã.
+
+## Product Owner
+
+O papel do Product Owner é ser representante do cliente em um time de Scrum. Ele é quem escutará as diversas opiniões dos clientes e chegará em funcionalidades que façam sentido para os negócios, de maneira a maximizar valor, captando ideias e prioridades do cliente. É muito importante que o Product Owner dedique muita atenção para manter o Product Backlog o mais atualizado possível.
+
+Outra estratégia que o P.O. pode utilizar para manter a lista atualizada é re-priorizar histórias. A prioridade das tarefas pode diminuir ou aumentar. Se determinada tarefa ganha maior importância, sua prioridade sobe. Se algo que à primeira vista parece importante perde relevância, a prioridade diminui.
+
+Outra tarefa do Product Owner é entender os problemas do cliente e ensiná-lo a trabalhar com histórias, se essa for a escolha de documentação do projeto. Além disso, o P.O. é responsável por falar com o time de desenvolvimento quando houver dúvidas.
+
+### Uma pessoa só
+
+Outra informação importante sobre o P.O. é que ele é uma pessoa, não um comitê. A razão para isso é bastante simples: o time precisa saber quem está no comando do que será feito e, se tivéssemos diversos P.O.s correríamos um maior risco de informações conflitantes atrapalharem o time.
+
+## Desenvolvedores
+
+Desenvolvedor é aquele que ajuda a executar o projeto e o faz andar para a frente: programadores, DBA, arquitetos, analistas, front-ends, testers, entre outros. São todas as pessoas e funções que ajudam o projeto a sair do papel e virar um sistema ou produto final.
+
+>Com exceção do Project Owner e do Scrum Master, o restante do time é o grupo de desenvolvimento.
+
+Mesmo o Project Owner e o Scrum Master podem ser *part-time* desenvolvedores. É mais usual encontrar Scrum Master como desenvolvedor do que Project Owner, mas é possível para ambos os cargos.
+
+O desenvolvedor fará o trabalho que sempre fez, porém, com algumas outras responsabilidades. Ele destrincha as histórias por um viés técnico, por exemplo, de maneira a estimar o esforço envolvido. Este é o primeiro aspecto que diferencia o Scrum de outros desenvolvimentos de projeto: ninguém deve chegar e falar para o desenvolvedor qual deve ser seu trabalho.
+
+Os desenvolvedores também decidem o quanto de trabalho pode ser feito em um time-box. Não é uma pessoa externa que define tempo, são os próprios envolvidos no trabalho. E o cliente e o P.O. confiam no tempo estimado pelos desenvolvedores, justamente porque eles são os que melhor sabem sobre o que podem fazer.
+
+
+
+## O dia-a-dia de cada um
+
+### Scrum Master
+
+* Facilitar as reuniões, quando necessário;
+* Atentar para o cumprimento dos time-boxes e explicar o porquê deles;
+* Educar desenvolvedores, product owner e clientes sobre o processo;
+* Remover ou reduzir impedimentos (não problemas!);
+* Buscar continuamente ferramentas para ajudar o time a evoluir.
+* E no que pode estar impedindo o time de melhorar sua performance.
+
+### Porduct Owner
+
+* Participar das reuniões;
+* Responder dúvidas dos desenvolvedores sobre histórias ou indicar quem poderia respondê-las melhor;
+* Deixar claro para o time qual o valor de negócios de cada Sprint;
+* Obter feedback e expectativas dos diversos clientes e extrair delas as necessidades;
+* Manter o Product Backlog atualizado, isto é:
+ * Adicionar itens novos;
+ * Remover itens desatualizados;
+ * Revisar a priorização do backlog constantemente;
+ * Refinar histórias mais importantes em preparação para o próximo Planning.
+
+### Desenvolvedores
+
+#### Desenvolvedores devem:
+
+* Decidir a abordagem técnica para os problemas apresentados;
+* Trocar informações e ajudar os companheiros de time;
+* Estimar as histórias durante o planning;
+* Escolher sua próxima tarefa a ser feita, considerando as prioridades da Sprint;
+* Buscar a qualidade do projeto e a redução de erros.
+
+#### Desenvolvedores não devem:
+
+* Considerar dúvidas técnicas como impedimentos - elas são apenas problemas;
+* Esperar que alguém decida as atividades a serem feitas por eles;
+* Se recusar a aprender um pouco sobre outras áreas de desenvolvimento.
+
+## O time
+
+Há algumas tarefas que cabem ao time inteiro, como um todo, como por exemplo a decisão do momento de contratação de uma nova pessoa, uma vez que a equipe sente a necessidade de um novo integrante. A melhoria contínua do processo, da forma de comunicação, do projeto e das pessoas envolvidas é função do time como um todo. A maior vantagem de trabalharmos com uma célula de trabalho é que ela irá refletir continuamente sobre o trabalho, melhorando constantemente.
+
+>A melhoria contínua é essencial!
+
 
