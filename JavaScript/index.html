@@ -17,6 +17,8 @@
 		<main>
 			<section class="container">
 				<h2>Meus pacientes</h2>
+				<label for="filtro">Filtrar Tabela</label>
+				<input class="campo" type="text" name="filtro" id="filtro" placeholder="Nome">
 				<table>
 					<thead>
 						<tr>
@@ -30,7 +32,7 @@
 					<tbody id="tabela-pacientes">
 						<tr class="paciente" id="primeiro-paciente">
 							<td class="info-nome">Paulo</td>
-							<td class="info-peso">1000</td>
+							<td class="info-peso">100</td>
 							<td class="info-altura">2.00</td>
 							<td class="info-gordura">10</td>
 							<td class="info-imc">0</td>
@@ -55,10 +57,11 @@
 						<tr class="paciente">
 							<td class="info-nome">Douglas</td>
 							<td class="info-peso">85</td>
-							<td class="info-altura">10.73</td>
+							<td class="info-altura">1.73</td>
 							<td class="info-gordura">24</td>
 							<td class="info-imc">0</td>
 						</tr>
+
 						<tr class="paciente" >
 							<td class="info-nome">Tatiana</td>
 							<td class="info-peso">46</td>
@@ -66,8 +69,17 @@
 							<td class="info-gordura">19</td>
 							<td class="info-imc">0</td>
 						</tr>
+
+						<tr class="paciente" >
+							<td class="info-nome">Pedro</td>
+							<td class="info-peso">82</td>
+							<td class="info-altura">1.85</td>
+							<td class="info-gordura">15</td>
+							<td class="info-imc">0</td>
+						</tr>
 					</tbody>
 				</table>
+				<button id="buscar-paciente" class="botao bto-principal wide">Buscar Pacientes</button>
 
 			</section>
 		</main>
@@ -78,25 +90,30 @@
 				<div class="grupo">
 					<label for="nome">Nome:</label>
 					<input id="nome" name="nome" type="text" placeholder="digite o nome do seu paciente" class="campo">
+					<span id="w-nome" class="f-warning">Valor inválido</span>
 				</div>
 				<div class="grupo">
 					<label for="peso">Peso:</label>
 					<input id="peso" name="peso" type="text" placeholder="digite o peso do seu paciente" class="campo campo-medio">
+					<span id="w-peso" class="f-warning">Valor inválido</span>
 				</div>
 				<div class="grupo">
 					<label for="altura">Altura:</label>
 					<input id="altura" name="altura" type="text" placeholder="digite a altura do seu paciente" class="campo campo-medio">
+					<span id="w-altura" class="f-warning">Valor inválido</span>
 				</div>
 				<div class="grupo">
 					<label for="gordura">% de Gordura:</label>
 					<input id="gordura" type="text" placeholder="digite a porcentagem de gordura do seu paciente" class="campo campo-medio">
+					<span id="w-gordura" class="f-warning">Valor inválido</span>
 				</div>
-
 				<button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
 			</form>
 		</section>
 
 		<script src="js/principal.js" ></script>
+		<script src="js/filtro.js" ></script>
+		<script src="js/busca.js" ></script>
 
 	</body>
 </html>

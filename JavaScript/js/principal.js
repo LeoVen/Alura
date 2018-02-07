@@ -5,14 +5,29 @@ updateTable();
 
 var botaoAdicionar = document.querySelector("#adicionar-paciente");
 
+var tabela = document.querySelector("table");
+
+tabela.addEventListener("dblclick", function(event) {
+	if (event.target.tagName == 'TD') {
+        event.target.parentNode.classList.add("fadeOut");
+		setTimeout(function() {
+			event.target.parentNode.remove();
+		}, 500);
+    }
+});
+
 botaoAdicionar.addEventListener("click", function(event) {
+	resetForm();
+
 	event.preventDefault();
 	
 	var form = document.querySelector("#form-adiciona");
 
 	var paciente = getFormFields(form);
 
-	if (validateForm(paciente)) {
+	var bools = validateForm(paciente);
+
+	if (bools[0] && bools[1] && bools[2] && bools[3]) {
 		pacienteTr = getRowStructure(paciente);
 
 		var tabela = document.querySelector("#tabela-pacientes");
@@ -23,7 +38,7 @@ botaoAdicionar.addEventListener("click", function(event) {
 
 		form.reset();
 	} else {
-		//logErro();
+		logErro(bools);
 	}
 
 	
@@ -112,14 +127,55 @@ function getTdStructure(dado, classe) {
 
 function validateForm(paciente) {
 
-	if (paciente.nome.length < 3) return false;
-	else if (paciente.peso < 2 || paciente.peso > 400) return false;	
-	else if (paciente.altura < 0.1 || paciente.altura > 2.5) return false;
-	else if (paciente.gordura < 0 || paciente.gordura > 100) return false;
-	else return true;
+	var booleans = [false, false, false, false];
+	if (paciente.nome.length > 2) booleans[0] = true;
+	if (paciente.peso > 2 && paciente.peso < 400 && paciente.peso.length > 0) booleans[1] = true;	
+	if (paciente.altura > 0.1 && paciente.altura < 2.5 && paciente.altura.length > 0) booleans[2] = true;
+	if (paciente.gordura >= 0 && paciente.gordura <= 100 && paciente.gordura.length > 0) booleans[3] = true;
+	return booleans;
 
 }
 
-function logErro() {
-	alert("Não foi possível cadastrar usuário");
+function logErro(bools) {
+	
+	var wNome = document.querySelector("#w-nome");
+	var wPeso = document.querySelector("#w-peso");
+	var wAltura = document.querySelector("#w-altura");
+	var wGordura = document.querySelector("#w-gordura");
+
+	if (!bools[0]) {
+		wNome.classList.add("f-show");
+		nome.classList.add("form-error");
+	}
+	if (!bools[1]) {
+		wPeso.classList.add("f-show");
+		peso.classList.add("form-error");
+	}
+	if (!bools[2]) {
+		wAltura.classList.add("f-show");
+		altura.classList.add("form-error");
+	}
+	if (!bools[3]) {
+		wGordura.classList.add("f-show");
+		gordura.classList.add("form-error");
+	}
+
+}
+
+function resetForm() {
+
+	var wNome = document.querySelector("#w-nome");
+	var wPeso = document.querySelector("#w-peso");
+	var wAltura = document.querySelector("#w-altura");
+	var wGordura = document.querySelector("#w-gordura");
+
+	wNome.classList.remove("f-show");
+	nome.classList.remove("form-error");
+	wPeso.classList.remove("f-show");
+	peso.classList.remove("form-error");
+	wAltura.classList.remove("f-show");
+	altura.classList.remove("form-error");
+	wGordura.classList.remove("f-show");
+	gordura.classList.remove("form-error");
+
 }

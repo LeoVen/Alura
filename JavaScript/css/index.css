@@ -21,7 +21,7 @@ header h1 {
 }
 header h2 {
 	font-size: 2em;
-	display:inline-block;
+	display: inline-block;
 	vertical-align:	middle;
 }
 
@@ -83,6 +83,17 @@ label {
 	border: 1px solid #ccc;
 	padding: .7em;
 	width: 100%;
+	outline: none;
+}
+
+.campo:focus {
+	background-color: #000;
+	border-color: #fff;
+	color: #fff;
+}
+
+.campo:focus::placeholder {
+	color: #eee;
 }
 
 .campo-medio {
@@ -148,4 +159,30 @@ button[disabled=disabled], button:disabled {
 
 .form-error {
 	border-color: red;
+}
+
+.f-warning {
+	color: red;
+	opacity: 0;
+}
+
+.f-show {
+	opacity: 1;
+}
+
+input[type=text] {
+	margin: 10px 0px 10px 0px;
+}
+
+.fadeOut {
+	transition: 0.5s;
+	opacity: 0;
+}
+
+.invisible {
+	display: none;
+}
+
+.wide {
+	width: 35%;
 }

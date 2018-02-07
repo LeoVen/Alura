@@ -47,16 +47,6 @@ Gatilhos são uma espécie de mapa que pode nos auxiliar a localizar a raiz do p
 
 Todo feedback é temperado pela relação que existe entre quem dá e quem recebe e nossas reações podem se basear naquilo que acreditamos sobre quem dá o feedback. Os gatilhos de relacionamento podem provocar mágoa, desconfiança e às vezes raiva. 
 
-* Ver outros gatilhos.
-
-De forma geral, o feedback pode chegar de 3 maneiras:
-
-* __Reconhecimento__: “Gostei muito da maneira que o projeto foi conduzido.”
-* __Orientação__: “Há uma maneira melhor de lidar com isso para melhorar a sua relação com o cliente.”
-* __Avaliação__: “Deste jeito, não dá mais para trabalhar. Pode parar por aqui.”
-
->Entender antes de mais nada.
-
 Enxergar nossos pontos cegos podem ajudar na hora de dar feedbacks e receber feedbacks, assim como na hora de conversar com as pessoas. A análise de nós mesmos pode ajudar a entender como as outras pessoas nos veem.
 
 ### Gatilho de Identidade: quando um feedback abala nossa identidade
@@ -68,4 +58,52 @@ Os Gatilhos de identidades não estão focados nem no feedback nem no emissor. T
 ### Identidade de Crescimento
 
 >Ao invés de sermos uma pintura em óleo em uma moldura dourada, somos um esboço à lápis de um momento
+
+## Tipos de Feedback
+
+De forma geral, o feedback pode chegar de 4 maneiras:
+
+### Reconhecimento
+
+>Demonstra aprovação de um comportamento.
+
+Quando somos reconhecidos pelo trabalho ou pelas tarefas que realizamos. Deve-se tomar cuidado com este feedback pois ele pode se tornar um bom feedback ou um bom feedback na hora errada. 
+
+### Orientação
+
+>Demonstra pontos de como algo pode ser melhorado.
+
+Quando somos orientados ou orientamos as pessoas porque determinada tarefa não está de acordo com o horário, quando sugerimos uma abordagem diferente para determinados assuntos ou até mesmo quando o cliente fala sobre suas expectativas, nos orientando para os próximos passos.
+
+### Avaliação
+
+>Indica um posicionamento.
+
+Quando recebemos uma avaliação. Este feedback é muito bom para o desenvolvimento do nosso ser se formos capazes de processar este feedback e criar formas de melhorar.
+
+### Corretivo
+
+Quando nenhum outro feedback resolve o problema, usamos o feedback corretivo. Ele serve para trazer à consciência o que está de errado e modificar um comportamento. Deve-se ter cuidado pois ele não pode soar como uma bronca. Deve ser um feedback direto e esclarecedor, começando por elogios e depois, indo direto ao ponto, falar o ponto crítico que precisa mudar.
+
+#### Exemplos
+
+* Reconhecimento: “Gostei muito da maneira que o projeto foi conduzido.”
+* Orientação: “Há uma maneira melhor de lidar com isso para melhorar a sua relação com o cliente.”
+* Avaliação: “Deste jeito, não dá mais para trabalhar. Pode parar por aqui.”
+* Corretivo: “Tudo que foi feito está ótimo, mas o problema que persiste é a falta de documentação.”
+
+>Entender antes de mais nada.
+
+## Fatores que contribuem para o processo do Feedback
+
+O feedback é uma importante ferramenta para nos ajudar em nossa comunicação e relação com as pessoas, tanto no ambiente profissional como no pessoal. É um processo onde precisamos nos comunicar de forma construtiva para reconhecer os pontos fortes e aqueles que precisam ser melhorados de um indivíduo.
+
+Não é suficiente apenas que o líder esteja preparado para dar o feedback. É preciso que a equipe também esteja preparada para participar do processo ou, caso contrário, a interpretação pode ser vista como críticas e ameaças. É preciso que os envolvidos sejam preparados e compreendam a essência do processo antes que o mesmo seja aplicado.
+
+O feedback deve ser apresentado como um instrumento de mudança que pode melhorar o desenvolvimento de um indivíduo. Isso porque ele sempre vai tirar a pessoa da sua zona de conforto e quando isso acontece, ela tende a apresentar resistência às mudanças.
+
+* O feedback precisa ser um processo contínuo.
+* A forma como o convite é feito para realizar o feedback é outro ponto relevante para o processo.
+* Nunca dê um feedback se estiver nervoso.
+* Feedback é um processo de mão dupla.
 
