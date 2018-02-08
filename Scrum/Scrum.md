@@ -96,7 +96,7 @@ A definição de pronto deve ser uma visão uniforme para o time todo. O critér
 
 ## Retrospectiva
 
-Entre a *Review Meeting* e a Retrospectiva não há tempo de desenvolvimento. Ela é o ultimo time-box do sprint. É a reunião mais importante de melhoria contínua. Ela precisa ser no máximo 5% do tempo do sprint e não durar mais que duas horas. Participam dela o Scrum Master, Product Owner e Desenvolvedores. Essa é a hora 
+Entre a *Review Meeting* e a Retrospectiva não há tempo de desenvolvimento. Ela é o ultimo time-box do sprint. É a reunião mais importante de melhoria contínua. Ela precisa ser no máximo 5% do tempo do sprint e não durar mais que duas horas. Participam dela o Scrum Master, Product Owner e Desenvolvedores.
 
 Para começar a retrospectiva, iniciamos citando o Prime Directive, inclusive vários facilitadores da comunidade ágil mundial iniciam assim. Prime Directive é a diretiva primária, que resume-se a um parágrafo com o seguinte conteúdo: não importa o que descobriremos nessa reunião, consideraremos que as pessoas agiram dessa forma devido aos conhecimentos que possuíam na época, tempo e recursos disponíveis. Considerando esses aspectos, as pessoas fizeram seu melhor, e agora devemos seguir adiante.
 
