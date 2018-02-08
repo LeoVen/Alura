@@ -1,10 +1,7 @@
-var express = require('express');
-var app = express();
+var app = require('./config/express')(); // Configurações do Express
+var r = require('./app/routes/routes')(app); // Configurações de rotas
 
-app.get('/produtos', function(request, response) {
-	response.send("<!DOCTYPE html> <html lang='en'> <head> <meta charset='UTF-8'> <title>Alura</title> </head> <body> <h1>Home</h1> <a href='/produtos'>Outra página</a></body> </html>");
-});
-
+// Listen na porta 3000
 app.listen(3000, function() {
-	console.log("Server Running");
+	console.log("Server Running...");
 });

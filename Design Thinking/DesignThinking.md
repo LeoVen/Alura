@@ -57,3 +57,4 @@ Para passarmos por estas etapas precisamos antes nos preparar, nos organizar e s
 5. Estabeleça limites;
 6. Escreva um Resumo - Briefing;
 7. Objetivos finais;
+

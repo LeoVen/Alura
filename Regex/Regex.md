@@ -4,8 +4,6 @@ Uma expressão regular, ou Regex, são padrões utilizados para identificar dete
 
 >Regex é apenas a regra como encontrar dentro de um texto alguma string.
 
-[Site muito bom para aprender Regex.](https://regexr.com/)
-
 Qualquer regex precisa ser interpretada por meio de uma regex engine. Esse motor é uma parte de software que processa a expressão, tentando achar o padrão dentro da string dada, devolvendo os resultados. Normalmente a regex engine faz parte da aplicação maior, para executar uma validação ou busca de uma string.
 
 ## Utilização
@@ -17,3 +15,6 @@ Qualquer regex precisa ser interpretada por meio de uma regex engine. Esse motor
 
 Dentro de uma classe, apenas os caracteres \ - ^ são realmente considerados meta-chars.
 
+https://regexr.com/
+
+https://regex101.com/

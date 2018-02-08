@@ -291,5 +291,3 @@ Os desenvolvedores também decidem o quanto de trabalho pode ser feito em um tim
 Há algumas tarefas que cabem ao time inteiro, como um todo, como por exemplo a decisão do momento de contratação de uma nova pessoa, uma vez que a equipe sente a necessidade de um novo integrante. A melhoria contínua do processo, da forma de comunicação, do projeto e das pessoas envolvidas é função do time como um todo. A maior vantagem de trabalharmos com uma célula de trabalho é que ela irá refletir continuamente sobre o trabalho, melhorando constantemente.
 
 >A melhoria contínua é essencial!
-
-
