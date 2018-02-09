@@ -28,9 +28,11 @@ Centrar no usuário significa ter empatia pelo usuário, e essa empatia signific
 
 Quando falamos do pilar colaborativo, estamos falando de muitas mentes pensando juntas em prol de um desafio. Muitas mentes podem gerar muitas soluções ou uma solução mais precisa para seu desafio, pois teremos perspectivas diferentes e mais criatividade em um grupo, que então pode gerar um conceito criativo, um novo olhar, uma nova forma de pensar sobre o desafio, muito mais forte e contundente. Esse pilar é muito importante para o processo!
 
+>Pessoas dispostas para trabalharem em equipe e com perfis diferentes trarão uma solução muito mais robusta e assertiva para seu processo de Design.
+
 ### Otimista
 
-No decorrer desse curso e do próximo de DT, você verá que para o processo dar certo, você e seu grupo precisam acreditar que todos podem criar mudanças, não importa o grau de instrução, o cargo na empresa, o tamanho do problema que temos para resolver ou até mesmo se temos os recursos financeiros necessários para resolvê-lo. Não importam as restrições ao nosso redor, pensar como um designer pode nos agregar um momento divertido, criativo e extremamente construtivo para o grupo.
+Para o processo dar certo, o grupo precisa acreditar que todos podem criar mudanças, não importa o grau de instrução, o cargo na empresa, o tamanho do problema que temos para resolver ou até mesmo se temos os recursos financeiros necessários para resolvê-lo. Não importam as restrições, pensar como um designer pode agregar um momento divertido, criativo e extremamente construtivo para o grupo.
 
 ### Experimental
 
@@ -41,6 +43,7 @@ O pilar Experimental traz a quebra de um dos paradigmas que mais permeia as meto
 O Design Thinking, do início à conclusão, é composto por 5 etapas fundamentais:
 
 * Descoberta
+	* 
 * Interpretação
 * Ideação
 * Experimentação
@@ -48,13 +51,45 @@ O Design Thinking, do início à conclusão, é composto por 5 etapas fundamenta
 
 Para passarmos por estas etapas precisamos antes nos preparar, nos organizar e sentar com um grupo para então avançar. O nome dessa parte anterior às cinco fundamentais é Preparação.
 
-# Preparação
+# Descoberta
 
-1. Problemas - Coisas que eu gostaria que tivesse;
-2. Como podemos;
-3. Seja simples;
-4. Medidas/Indicadores de Sucesso;
-5. Estabeleça limites;
-6. Escreva um Resumo - Briefing;
-7. Objetivos finais;
+É na fase Descoberta que vamos ter uma grande quantidade de informações, que vamos entrar em contato com lugares e pessoas, para descobrirmos itens relacionados ao nosso desafio. Na etapa/fase Descoberta, é primordial nós termos nossas mentes abertas para novas oportunidades em relação ao nosso desafio/problema do Design Thinking e então abandonar "velhas" ideias e se abrir as novas que podem e vão surgir.
 
+## Preparação
+
+O Desafio/Problema de Design é a porta para qualquer processo de Design, seja design thinking, user experience design ou qualquer outra metodologia que tenha o Design como princípio. Começar com isso, nos abrirá horizontes e nos permitirá chegar a uma solução ao nosso Desafio de Design.
+
+* Entendimento: todos do time precisam entender qual é o problema;
+* Plano de ação: planos para se resolver o problema;
+* Abordagem: como será tratado o problema;
+* Escopo claro: onde estamos e onde queremos chegar.
+
+Criar uma tabela com os seguintes tópicos:
+
+1. Problemas
+	* Identificar o problema com clareza
+2. Como podemos
+	* Como pode resolver esse problema, sem entrar em detalhes
+3. Seja simples
+	* Descrever o problema de forma simples
+4. Medidas/Indicadores de Sucesso
+	* Quais os indicadores que auxiliarão a percebermos se fomos bem sucedidos ou não
+5. Estabelecer limites
+	* Limitações que devemos levar em consideração ao pensar nas soluções para o problema
+6. Briefing
+	* Colocar tudo no papel
+7. Objetivos finais
+	* Onde esperamos chegar ao fim do processo do *Design Thinking*
+
+## Como Iniciar
+
+* Revisar Limites
+* Coletar Pensamentos
+* Redefinir Desafio
+* Criar Lembretes
+
+Tudo isso nos permite garantir que entendemos qual é o nosso desafio de design, e até mesmo mudar o rumo ou ampliar o que o nosso desafio de design pode contemplar.
+
+## Empatia
+
+Aqui 

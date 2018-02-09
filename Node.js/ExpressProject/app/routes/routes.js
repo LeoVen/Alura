@@ -6,6 +6,10 @@ module.exports = function(app) {
 	});
 
 	app.get('/main', function(request, response) {
+		var oracle = require('oracledb');
+		var dbConfig = require('./dbconfig.js');
+		var conn = oracle.
+
 		response.render("main/m");
 	});
 }
