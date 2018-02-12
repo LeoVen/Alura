@@ -28,7 +28,7 @@ public class CarrinhoDAO {
 		carrinho.setId(id);
 		banco.put(id, carrinho);
 	}
-	
+
 	public Carrinho busca(Long id) {
 		return banco.get(id);
 	}
