@@ -113,4 +113,4 @@ Existem 3 seções de um Git:
 
 ### Working Directory
 
-O *Working Directory* pode estar "*clean*" quando não há diferença entre os arquivos armazenados no repositório e os arquivos atualmente no repositório sendo trabalhado. Ou pode estar 
+O *Working Directory* pode estar "*clean*" quando não há diferença entre os arquivos armazenados no repositório e os arquivos atualmente no repositório sendo trabalhado.
