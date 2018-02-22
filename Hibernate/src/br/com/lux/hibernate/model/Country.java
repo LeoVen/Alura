@@ -5,16 +5,20 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import javax.persistence.TableGenerator;
 
 @Entity
 @Table(name = "COUNTRY_INFO", schema = "TESTE")
-@SequenceGenerator(name = "seq", sequenceName="seq", allocationSize = 1)
+@TableGenerator(name = "Country", initialValue = 0, allocationSize = 1)
 public class Country {
 
+	@Deprecated
+	public Country() {
+	}
+
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq")
+	@GeneratedValue(strategy = GenerationType.TABLE, generator = "Country")
 	@Column(name = "RANKING")
 	private int ranking;
 
@@ -22,7 +26,7 @@ public class Country {
 	private String name;
 
 	@Column(name = "POPULATION")
-	private double population;
+	private long population;
 
 	@Column(name = "PRODUCTION")
 	private double production;
@@ -51,12 +55,17 @@ public class Country {
 		this.name = name;
 	}
 
-	public double getPopulation() {
+	public long getPopulation() {
 		return population;
 	}
 
-	public void setPopulation(double population) {
+	public void setPopulation(long population) {
 		this.population = population;
+	}
+
+	@Override
+	public String toString() {
+		return this.ranking + ". " + this.name + ": " + this.population + " | " + this.production;
 	}
 
 }

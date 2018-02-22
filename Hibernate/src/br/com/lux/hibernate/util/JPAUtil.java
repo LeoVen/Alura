@@ -5,11 +5,9 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 public class JPAUtil {
-
-	private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("oracle");
 	
-	public EntityManager getEntityManager() {
-		return emf.createEntityManager();
+	public EntityManager getEntityManagerByName(String name) {
+		return Persistence.createEntityManagerFactory(name).createEntityManager();
 	}
-	
+
 }

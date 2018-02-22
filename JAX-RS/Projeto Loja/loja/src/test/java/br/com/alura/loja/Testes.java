@@ -4,7 +4,7 @@
 	SEE JAXB
 
  */
-/*
+
 package br.com.alura.loja;
 
 import java.io.IOException;
@@ -123,4 +123,3 @@ public class Testes {
 	}
 	
 }
-*/

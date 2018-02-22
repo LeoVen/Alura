@@ -55,6 +55,8 @@ Para passarmos por estas etapas precisamos antes nos preparar, nos organizar e s
 
 É na fase Descoberta que vamos ter uma grande quantidade de informações, que vamos entrar em contato com lugares e pessoas, para descobrirmos itens relacionados ao nosso desafio. Na etapa/fase Descoberta, é primordial nós termos nossas mentes abertas para novas oportunidades em relação ao nosso desafio/problema do Design Thinking e então abandonar "velhas" ideias e se abrir as novas que podem e vão surgir.
 
+A fase de Descoberta é a fase responsável por descobrirmos muitas informações sobre o nosso desafio e é primordial para as fases seguintes do DT.
+
 ## Preparação
 
 O Desafio/Problema de Design é a porta para qualquer processo de Design, seja design thinking, user experience design ou qualquer outra metodologia que tenha o Design como princípio. Começar com isso, nos abrirá horizontes e nos permitirá chegar a uma solução ao nosso Desafio de Design.
@@ -89,7 +91,3 @@ Criar uma tabela com os seguintes tópicos:
 * Criar Lembretes
 
 Tudo isso nos permite garantir que entendemos qual é o nosso desafio de design, e até mesmo mudar o rumo ou ampliar o que o nosso desafio de design pode contemplar.
-
-## Empatia
-
-Aqui 

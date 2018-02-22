@@ -9,7 +9,7 @@ public class PopulateDB {
 
 	public void populateDB() {
 
-		EntityManager em = new JPAUtil().getEntityManager();
+		EntityManager em = new JPAUtil().getEntityManagerByName("oracle");
 
 		String[] c = { "China", "India", "USA", "Indonesia", "Brazil", "Pakistan", "Mexico", "Thailand", "Colombia",
 				"Australia" };
