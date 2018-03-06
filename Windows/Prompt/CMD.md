@@ -97,6 +97,8 @@
 
 ## cmder
 
+>Prompt de comando melhorado e com alguns comandos linux e com GitBash
+
 #### Acessar configurações
 
 	Windows + Alt + P
