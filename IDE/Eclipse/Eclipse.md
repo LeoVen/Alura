@@ -17,5 +17,7 @@ Ler mais sobre:
 * __Ctrl__ + __F11__ : roda a última classe que você rodou.
 * __Ctrl__ + __Espaço__ : Completa códigosn
 * __Ctrl__ + __PageUp__ e __CTRL__ + __PageDown__ : Navega nas abas abertas
+* __Alt__ + __Shift__ + __R__ : Refatorar
+* __Alt__ + __Shift__ + __T__ : Menu de Refatorar
 
 Curso : Eclipse: Produtividade Extrema na IDE com Java
