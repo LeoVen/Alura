@@ -165,3 +165,32 @@ typedef struct {
 >>> # Empty dictionary
 >>> y = {}
 ```
+
+### Class
+
+```python
+>>> # Python Class structure
+>>> # Every function must have self as a parameter
+>>> class MyClass:
+        def __init__(self, param1, param2):
+            self.param1 = param1
+            self.param2 = param2
+        def helloWorld(self):
+            print("Hello World!")
+>>> type(MyClass)
+<class 'type'>
+>>>
+>>> # Get one instance of MyCLass into myclass variable
+>>> myclass = MyClass("param1", "param2")
+>>> type (myclass)
+<class '__main__.MyClass'>
+>>>
+>>> # Access parameters
+>>> myclass.param1
+'param1'
+>>>
+>>> # Access function
+>>> myclass.helloWorld()
+Hello World!
+>>>
+```
