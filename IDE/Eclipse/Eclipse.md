@@ -21,3 +21,9 @@ Ler mais sobre:
 * __Alt__ + __Shift__ + __T__ : Menu de Refatorar
 
 Curso : Eclipse: Produtividade Extrema na IDE com Java
+
+### Buscas
+
+* __Ctrl__ + __Shift__ + __R__ : Buscar recursos
+* __Ctrl__ + __Shift__ + __T__ : Buscar tipos
+* __F3__ : Se clicamos F3 em cima de uma classe ou uma variável somos levado até sua declaração
