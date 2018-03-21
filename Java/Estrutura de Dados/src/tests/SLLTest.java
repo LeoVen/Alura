@@ -1,5 +1,8 @@
 package tests;
 
+import java.util.LinkedList;
+import java.util.List;
+
 import structures.SinglyLinkedList;
 
 public class SLLTest {
@@ -23,6 +26,11 @@ public class SLLTest {
 		sll.removeHead();
 		sll.removeHead();
 		System.out.println(sll);
+		
+		// Java equivalent
+		// Note that this is actually a doubly linked list
+		List<String> list = new LinkedList<>();
+		list.add("Hello World");
 	}
 	
 }
