@@ -17,3 +17,5 @@ _Folders organized by topics_
 Example:
 
 	v-18-01.23.h
+
+Visit my new blog [Coding Candela](https://codingcandela.wordpress.com/) !
