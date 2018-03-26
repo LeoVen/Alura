@@ -64,9 +64,9 @@ O primeiro quartil corresponde aos primeiros ```1/4``` dos dados ordenados, o se
 
 A variância é calculada por:
 
-```( M1^2 + M2^2 + M3^2 + ... + Mn^2 ) / n```
+```( M₁² + M₂² + M₃² + ... + Mn² ) / n```
 
-onde ```n``` é a quantidade de elementos e ```M1, M2, ..., Mn``` é dado por:
+onde ```n``` é a quantidade de elementos e ```M₁, M₂, ..., Mn``` é dado por:
 
 ```Mn = (M - An)```
 
@@ -74,12 +74,23 @@ onde ```M``` é a média aritmética e ```An``` os números.
 
 Assim temos que a variância é igual à média aritmética dos dados menos o número, tudo elevado ao quadrado, somados e dividido pela quantidade de elementos. Assim, a variância de n elementos é dada por:
 
-	V(n) = [ (M - A1)^2 + (M - A2)^2 + (M - A3)^2 + ... + (M - An)^2 ] / n
+	V(n) = [ (M - A₁)² + (M - A₂)² + (M - A₃)² + ... + (M - An)² ] / n
 
 ### Desvio Padrão
 
 O desvio padrão é encontrado quando tiramo a raíz quadrada da variância:
 
-	Dp = sqrt[V(n)]
+	Dp = [V(n)]
 
 Um desvio padrão próximo à 0 significa que os dados estão próximos à média.
+
+## Amostra
+
+Uma parte significativa e atingível da população, que usamos para nossos testes e estudos. Dado que a amostra apenas representa a população, e a população deve ter seus dados mais dispersos, subtrair 1 do divisor nos ajuda a aumentar a variância, e dessa forma ficar mais perto da variância da população. Quanto maior o tamanho da amostra, mais perto da variância da população o valor será. Esse menos 1 só é relevante para pequenas amostras.
+
+## Degrees of Freedom
+
+## Intervalos de Confiança
+
+É o intervalo estimado de algum parâmetro estatístico. Ou seja, ao invés de afirmarmos que a média é "90", dizemos que a média está entre "88" e "92", com 95% de certeza. 95% é um número amplamente adotado como um intervalo de confiança. Não podemos usar 100% de confiança pois isso implicaria em termos um intervalo muito aberto, assim como 10% pois teríamos um intervalo muito fechado e provavelmente errado.
+

@@ -16,7 +16,50 @@ No dicionário: “*qualquer conhecimento obtido por meio dos sentidos.*” Na n
 
 No dicionário: “*aquele que, por direito de uso, serve-se de algo ou desfruta de suas utilidades.*”. Usuário apesar de pensarmos automaticamente em pessoas, usuário pode ser um sistema e até mesmo nosso animal de estimação.
 
-### Ver mais
+## Entregáveis e Ferramentas
 
-* Kanban
-	* Kanban é uma palavra de origem japonesa que significa “cartão visual” ou “sinalização visual”, ou seja, kanban é qualquer elemento de comunicação que passe uma ou mais informações de forma rápida e objetiva.
+### Entregáveis
+
+* Sitemap
+* Wireframe
+* Protótipo
+* Storyboards
+* Especificações por escrito
+* Personas e/ou proto-personas
+* Relatório de pesquisas
+* Mockups
+* Mapa de jornada do usuário
+* Histórias
+
+### Ferramentas
+
+* Adobe Photoshop
+* Sketch (mac)
+* Axure
+* Adobe XD
+* [UXPin](https://www.uxpin.com/)
+* [Marvel](https://marvelapp.com/)
+* [Invision](https://www.invisionapp.com/)
+* [Wireframe](https://wireframe.cc/)
+* [Balsamiq](https://balsamiq.com/)
+
+## Ver mais
+
+### Gamestorming
+
+* Tempo
+* Ambiente
+* Objetivo
+
+### Kanban
+Kanban é uma palavra de origem japonesa que significa “cartão visual” ou “sinalização visual”, ou seja, kanban é qualquer elemento de comunicação que passe uma ou mais informações de forma rápida e objetiva.
+
+### Zen Voting
+
+### Livros
+
+* "Gamestorming – Jogos Corporativos Para Mudar, Inovar e Quebrar Regras" - Dave Gray, Sunni Brown, James Macanufo
+* "Usabilidade na Web" - Jakob Nielsen & Hoa Loranger
+* "Não me faça pensar" (3ª edição) - Steve Krug
+* "Ux Design" - Fabricio Teixeira
+* "Sprint: o Método Usado No Google Para Testar e Aplicar Novas Ideias Em Apenas Cinco Dias" - Jake Knapp

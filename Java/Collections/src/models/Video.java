@@ -1,6 +1,6 @@
 package models;
 
-public class MyClass implements Comparable<MyClass> {
+public class Video implements Comparable<Video> {
 
 	private String title;
 	private int time;
@@ -13,20 +13,22 @@ public class MyClass implements Comparable<MyClass> {
 		return title;
 	}
 
-	public MyClass(String title, int time) {
+	public Video(String title, int time) {
 		this.title = title;
 		this.time = time;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "[" + this.title + " : " + this.time + "]";
 	}
 
 	@Override
-	public int compareTo(MyClass obj) {
-		if (this.time < obj.getTime()) return - 1;
-		else if (this.time > obj.getTime()) return 1;
+	public int compareTo(Video obj) {
+		if (this.time < obj.getTime())
+			return -1;
+		else if (this.time > obj.getTime())
+			return 1;
 		return 0;
 	}
 

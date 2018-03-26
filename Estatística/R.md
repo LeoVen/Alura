@@ -82,6 +82,40 @@
 
 >Ver data.csv
 
+## Intervalos de Confiança
+
+```R
+> lizard = c(6.2,6.6,7.1,7.4,7.6,7.9,8,8.3,8.4,8.5,8.6,8.8,8.8,9.1,9.2,9.4,9.7,9.9,10.2,10,11.3,11.9)
+> # Teste que mostra o intervalo de confiança
+> t.test(lizard)
+
+        One Sample t-test
+
+data:  lizard
+t = 29.169, df = 21, p-value < 2.2e-16
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+ 8.143041 9.393323
+sample estimates:
+mean of x 
+ 8.768182 
+
+> # Com conf.level podemos adotar um intervalo de confiança
+> t.test(lizard, conf.level=0.7) # 70%
+
+        One Sample t-test
+
+data:  lizard
+t = 29.169, df = 21, p-value < 2.2e-16
+alternative hypothesis: true mean is not equal to 0
+70 percent confidence interval:
+ 8.448739 9.087625
+sample estimates:
+mean of x 
+ 8.768182 
+
+```
+
 ## Outros
 
 ### Boxplot
@@ -128,5 +162,34 @@ W = 0.91823, p-value = 0.2716
 
 Se ```p-value``` for menor que ```0.05``` a distribuição não é normal.
 
+### Desenhar Linhas
+
 ```R
+> lizard = c(6.2,6.6,7.1,7.4,7.6,7.9,8,8.3,8.4,8.5,8.6,8.8,8.8,9.1,9.2,9.4,9.7,9.9,10.2,10,11.3,11.9)
+> mean <- mean(lizard)
+> median <- median(lizard)
+> t.test(lizard)
+
+        One Sample t-test
+
+data:  lizard
+t = 29.169, df = 21, p-value < 2.2e-16
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+ 8.143041 9.393323
+sample estimates:
+mean of x 
+ 8.768182 
+
+> hist(lizard)
+> abline(v=mean, col="red", lwd=2)
+> abline(v=median, col="blue", lwd=2)
+> abline(v=9.393323, col="green", lwd=2)
+> abline(v=8.143041, col="green", lwd=2)
+# Mostra histograma com linhas traçadas onde:
+# Verde: Intervalo de Confiança
+# Vermelho: média aritmética
+# Azul: mediana
 ```
+
+>Ver hist.png

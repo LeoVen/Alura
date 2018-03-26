@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-import models.MyClass;
+import models.Video;
 
 public class ArrayListTest {
 
@@ -34,7 +34,7 @@ public class ArrayListTest {
 		System.out.println("The first element is: " + firstString);
 
 		strList.add("Definetly not a NullPointerException!");
-		strList.add("Java is old. Where is Java++ ?");
+		strList.add("Java is ancient. Where is Java++ ?");
 		strList.add("To infinity and beyond!");
 
 		// Size of ArrayList
@@ -54,24 +54,24 @@ public class ArrayListTest {
 		Collections.sort(strList);
 		System.out.println("Sorted List: ");
 		System.out.println(strList);
-		
+
 		// Filling up new ArrayList with MyClass
-		ArrayList<MyClass> classList = new ArrayList<>();
-		strList.forEach(str ->{
-			classList.add(new MyClass(str, str.length()));
+		ArrayList<Video> classList = new ArrayList<>();
+		strList.forEach(str -> {
+			classList.add(new Video(str, str.length()));
 		});
-		System.out.println(classList);		
-		
+		System.out.println(classList);
+
 		// Sorting
 		Collections.sort(classList);
 		System.out.println(classList);
-		
+
 		// Sorting with comparator
-		Collections.sort(classList, Comparator.comparing(MyClass::getTitle));
+		Collections.sort(classList, Comparator.comparing(Video::getTitle));
 		System.out.println(classList);
-		
+
 		// Can also be done with:
-		classList.sort(Comparator.comparing(MyClass::getTitle));
+		classList.sort(Comparator.comparing(Video::getTitle));
 		System.out.println(classList);
 
 	}
