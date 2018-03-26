@@ -15,3 +15,8 @@ No dicionário: “*qualquer conhecimento obtido por meio dos sentidos.*” Na n
 ### Usuário
 
 No dicionário: “*aquele que, por direito de uso, serve-se de algo ou desfruta de suas utilidades.*”. Usuário apesar de pensarmos automaticamente em pessoas, usuário pode ser um sistema e até mesmo nosso animal de estimação.
+
+### Ver mais
+
+* Kanban
+	* Kanban é uma palavra de origem japonesa que significa “cartão visual” ou “sinalização visual”, ou seja, kanban é qualquer elemento de comunicação que passe uma ou mais informações de forma rápida e objetiva.
