@@ -116,6 +116,94 @@ mean of x
 
 ```
 
+## Testes
+
+### Gerar dados em um dado intervalo
+
+```R
+> # Gerar n dados em um intervalo de x1 a x2
+> inter <- runif(n, x1, x2)
+# Agora temos uma lista de n valores que vão de x1 a x2
+```
+
+### Student t-Test
+
+```R
+> # Compara duas amostras normais
+> null <- runif(100, 37.9, 38.8)
+> hip <- runif(100, 36.0, 38.2)
+> t.test(null, hip)
+
+        Welch Two Sample t-test
+
+data:  null and hip
+t = 19.693, df = 128.17, p-value < 2.2e-16
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 1.193505 1.460128
+sample estimates:
+mean of x mean of y 
+ 38.38168  37.05486 
+
+```
+
+### Wilcoxon Test
+
+```R
+> # Compara duas amostras não necessariamente normais
+> null <- runif(100, 37.9, 38.8)
+> hip <- runif(100, 36.0, 38.2)
+> wilcox.test(null, hip)
+
+        Wilcoxon rank sum test with continuity correction
+
+data:  null and hip
+W = 9861, p-value < 2.2e-16
+alternative hypothesis: true location shift is not equal to 0
+
+```
+
+## Correlação
+
+```R
+> # Correlação entre dois dados
+> d1 <- c(1, 2, 3, 4)
+> d2 <- c(2, 4, 6, 8)
+> cor(d1, d2)
+[1] 1
+> d2 <- c(8, 6, 4, 2)
+> cor(d1, d2)
+[1] -1
+> # É possível definir explicitamente o método
+> d2 <- c(22, 28, 43, 26)
+> cor(d1, d2, method="pearson")
+[1] 0.3797547
+> cor(d1, d2, method="spearman")
+[1] 0.4
+```
+
+## Linear Regression
+
+```R
+> # Regressão Linear usando lm (Linear Model)
+> d1 <- c(37, 40, 78, 45)
+> d2 <- c(22, 28, 43, 26)
+> lm(formula = d1 ~ d2)
+
+Call:
+lm(formula = d1 ~ d2)
+
+Coefficients:
+(Intercept)           d2  
+     -9.794        2.010  
+
+> # Assim temos que a função é dada por
+> # f(x) = -9.794 + 2.01 * x
+> # É possível usar apenas
+> lm(d1 ~ d2)
+# Resultado
+```
+
 ## Outros
 
 ### Boxplot
