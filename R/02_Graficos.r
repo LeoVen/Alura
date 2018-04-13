@@ -1,5 +1,7 @@
 # Importanto dataset duracao.csv
 
+# install.packages("plyr")
+
 # Removendo tudo que está no IDE
 rm(list=ls())
 

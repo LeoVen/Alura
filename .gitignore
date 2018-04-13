@@ -4,3 +4,10 @@
 C/LoremIpsum.txt
 C/LeroLero.txt
 Node.js/
+
+# vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json

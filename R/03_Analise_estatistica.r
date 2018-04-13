@@ -1,5 +1,9 @@
 # Importanto dataset duracao.csv
 
+# install.packages("plyr")
+
+# install.packages("plyr")
+
 # Removendo campos nulos (not available) = True
 mean(duracao$dias, na.rm = T)
 
