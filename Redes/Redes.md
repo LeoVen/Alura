@@ -4,7 +4,7 @@ Uma rede de computadores é formada por um conjunto de máquinas eletrônicas co
 
 ### ping
 
-```ping```
+	ping
 
 Dentro da ferramenta administrativa do ping temos o protocolo ICMP, sendo ele o responsável por mandar uma requisição (Echo Request) para máquina remota e esperar um retorno dessa máquina remota (Echo Reply).
 
@@ -14,7 +14,7 @@ O TTL seria uma informação dentro do pacote do IP que informa qual é a máxim
 
 ### Traceroute
 
-```tracert```
+	tracert
 
 A principal funcionalidade do traceroute é verificar a rota que a minha informação levou para chegar até a máquina de destino. Isso porque, em redes de computadores temos o que chamamos de rede não determinística, ou seja, não necessariamente um pacote de informação vai ser transferido pela mesma rota do anterior com o mesmo intervalo de tempo. Isto se deve a muitos fatores, por exemplo, uma máquina que pode estar congestionada ou um problema no link de comunicação, etc.
 
@@ -22,7 +22,7 @@ Quando nós temos uma máquina que retornou (\*) e passou a informação para um
 
 ### Nslookup
 
-```nslookup```
+	nslookup
 
 O Nslookup pode ser usado para descobrirmos o endereço IP de um domínio, bem como saber detalhes mais avançados de DNS, para saber se nosso serviço está sendo direcionado para a máquina de destino, por exemplo.
 
@@ -53,3 +53,27 @@ Algumas placas de rede mais modernas possuem o padrão auto-MDIX, dessa forma, s
 ### Roteador
 
 A função do roteador é interconectar redes encaminhando seus pacotes de dados, os Switches e hubs são usados somente para conexão na minha rede local.
+
+## Classes de Redes
+
+| Classe | Intervalo |    Máscara    |
+|:------:|:---------:|:-------------:|
+|    A   |  1 - 126  |   255.0.0.0   |
+|    B   | 128 - 191 |  255.255.0.0  |
+|    C   | 192 - 223 | 255.255.255.0 |
+|    D   | 224 - 239 |       -       |
+|    E   | 240 - 255 |       -       |
+
+As classes A, B e C são usadas para máquinas. Já a classe D é reservada para multicasting e a classe E é reservada para experimentos.
+
+O IP 127.0.0.1 é uma faixa de IP reservada para a rede interna da placa de rede para testes e validar operamento.
+
+### IP privado
+
+Dentro de cada classe de IP temos uma faixa de IP privados onde não será possível comunicar-se com a internet, apenas na rede local.
+
+| Classe |    Intervalo Privado    |
+|:------:|:-----------------------:|
+|    A   |         10.X.X.X        |
+|    B   | 172.16.X.X - 172.31.X.X |
+|    C   |       192.168.X.X       |
