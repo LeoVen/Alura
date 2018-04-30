@@ -77,3 +77,4 @@ Dentro de cada classe de IP temos uma faixa de IP privados onde não será poss�
 |    A   |         10.X.X.X        |
 |    B   | 172.16.X.X - 172.31.X.X |
 |    C   |       192.168.X.X       |
+

@@ -77,3 +77,51 @@ If a Key is declared twice only the last is considered. In this case, ```param1`
 
 [See documentation](https://docs.mongodb.com/manual/reference/operator/query-logical/)
 
+### Update
+
+		db.{collectionName}.update(
+			{"conditional_param1" : "value1"},
+			{
+				{"param1" : "value1"}
+			}
+		)
+
+This way the document is updated completely having only ```param1``` with ```value1``` as its content. To update only a single value use ```$set```
+
+		db.{collectionName}.update(
+			{"conditional_param1" : "value1"},
+			{
+				$set {
+					"param1" : "value1"
+				}
+			}
+		)
+
+To update multiple lines use ```multi : true```
+
+		db.{collectionName}.update(
+			{"conditional_param1" : "value1"},
+			{
+				$set {
+					"param1" : "value1"
+				}
+			}, {
+				multi : true
+			}
+		)
+
+To add more values to an array one by one (not the array itself)
+
+	db.{collectionName}.update(
+		{ "nome" : "Guilherme" },
+		{
+			$push : {
+				"notas" : {
+					$each:[8.5, 10]
+				}
+			}
+		}
+	)
+
+[See documentation for more](https://docs.mongodb.com/manual/reference/operator/update/)
+
