@@ -125,3 +125,37 @@ To add more values to an array one by one (not the array itself)
 
 [See documentation for more](https://docs.mongodb.com/manual/reference/operator/update/)
 
+### More complex searches
+
+Search for documents where either the enemy team or the home team has made 6 goals or more
+
+```
+db.WorldCupNorm.find(
+	{ $and : [
+			{ $or : [
+				{"Home Team Goals" : { $gt : "6" }},
+				{"Away Team Goals" : { $gt : "6" }}
+				]
+			},
+			{"Year" : { $gt : "2000"}}
+		]
+	}
+)
+```
+
+Sort by a parameter (1 is ascending and -1 is descending)
+
+```
+db.{collectionName}.find().sort({"keyName" : 1})
+```
+
+To limit the search (n documents)
+
+```
+db.{collectionName}.find().limit(n)
+```
+
+Ou também
+```
+db.{collectionName}.find().sort({"keyName" : 1}).limit(n)
+```
