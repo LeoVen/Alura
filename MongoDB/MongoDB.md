@@ -159,3 +159,36 @@ Ou também
 ```
 db.{collectionName}.find().sort({"keyName" : 1}).limit(n)
 ```
+
+### Agregar por Proximidade
+
+Para importar no banco os dados
+
+	mongoimport -d {databaseName} -c {collectionName} --jsonArray < file.json
+
+Criar um index de busca
+
+	db.{collectionName}.createIndex({
+		localizacao : "2dsphere"
+	})
+
+Calcula os 4 pontos mais próximos (o primeiro é pulado ```$skip : 1```) de um ponto com coordenadas ```coordinates``` onde a distância é dada como uma esfera e a distância é escrita no campo ```distanceField : "distancia.calculada"```.
+
+```
+db.{collectionName}.aggregate([
+{
+	$geoNear : {
+		near : {
+			coordinates : [-23.5640265, -46.6527128],
+			type : "Point"
+		},
+		distanceField : "distancia.calculada",
+		spherical : true,
+		num : 4
+	}
+},
+{$skip : 1}
+])
+```
+
+mongoimport -c DataScience --jsonArray < alunos.json

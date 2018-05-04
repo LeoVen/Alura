@@ -78,3 +78,28 @@ Dentro de cada classe de IP temos uma faixa de IP privados onde não será poss�
 |    B   | 172.16.X.X - 172.31.X.X |
 |    C   |       192.168.X.X       |
 
+## Endereços Reservados
+
+### Endereços Reservados da Classe A
+
+Uma Rede da classe A com endereço IP ```K.X.Y.Z``` :
+
+	Máscara de Rede : 255.0.0.0
+	Reservado para o endereço da rede : K.0.0.0
+	Reservado para broadcast : K.255.255.255
+
+### Endereços Reservados da Classe B
+
+Uma Rede da classe B com endereço IP ```K.X.Y.Z``` :
+
+	Máscara de Rede : 255.255.0.0
+	Reservado para o endereço de rede : K.X.0.0
+	Reservado para broadcast : K.X.255.255
+
+### Endereços Reservados da Classe C
+
+Uma Rede da classe B com endereço IP ```K.X.Y.Z``` :
+
+	Máscara de Rede : 255.255.255.0
+	Reservado para o endereço de rede : K.X.Y.0
+	Reservado para broadcast : K.X.Y.255

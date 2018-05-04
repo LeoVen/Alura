@@ -156,6 +156,28 @@ public class Java8 {
 		 * 
 		 * Usando a classe Course
 		 */
+		System.out.println(" ");
+		List<Course> courses = new ArrayList<>();
+		courses.add(new Course("Python", 240));		
+		courses.add(new Course("C++", 170));
+		courses.add(new Course("Java", 270));
+		courses.add(new Course("Perl", 80));
+		courses.add(new Course("JavaScript", 260));
+		
+		//courses.sort(Comparator.comparing(Course::getStudents));
+		//courses.forEach(c -> System.out.println(c.getName()));
+		
+		// A lista original não é afetada
+		courses.stream()
+			.filter(c -> c.getStudents() >= 200)
+			.map(Course::getName)
+			.forEach(System.out::println);
+		
+		int sum = courses.stream()
+				.mapToInt(Course::getStudents)
+				.sum();
+		
+		System.out.println("Total de alunos: " + sum);
 		
 		
 		
@@ -192,5 +214,22 @@ class Course {
 	private String name;
 	private int students;
 	
+	public Course(String name, int students) {
+		this.name = name;
+		this.students = students;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getStudents() {
+		return students;
+	}
+	public void setStudents(int students) {
+		this.students = students;
+	}
 	
 }
