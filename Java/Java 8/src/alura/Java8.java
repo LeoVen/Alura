@@ -1,20 +1,39 @@
 package alura;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.Month;
+import java.time.Period;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+import java.util.OptionalDouble;
 import java.util.function.Consumer;
 import java.util.function.Function;
+import java.util.stream.Collectors;
 
 public class Java8 {
 
 	public static void main(String[] args) {
 
 		/*
+		 * Consumer
+		 * BiConsumer
+		 * Comparator
 		 * Default Methods
 		 * Lambdas
 		 * Method Reference
+		 * Streams
+		 * Optional
+		 * LocalDate
+		 * Period
+		 * DateTimeFormatter
+		 * LocalDateTime
 		 * 
 		 * Interface Funcional
 		 */
@@ -178,8 +197,66 @@ public class Java8 {
 				.sum();
 		
 		System.out.println("Total de alunos: " + sum);
+
+		/*
+		 * Tipos Optional	
+		 */
 		
+		Optional<Course> optionalCourse = courses.stream()
+			.filter(c -> c.getStudents() >= 300)
+			.findAny();
 		
+		// Se encontrar, ok, caso contrário null
+		Course ifCourse = optionalCourse.orElse(null);
+		
+		// Se existe, imprimir na tela
+		optionalCourse.ifPresent(c -> System.out.println(c.getName()));
+		
+		OptionalDouble average = courses.stream()
+			.filter(c -> c.getStudents() >= 200)
+			.mapToInt(Course::getStudents)
+			.average();
+		
+		// Obter resultado de um filtro de uma Stream
+		List<Course> filteredList = courses.stream()
+				.filter(c -> c.getStudents() >= 200)
+				.collect(Collectors.toList());
+		
+		// Ou obter o resultado em outra forma de estrutura
+		Map<String, Integer> coursesMap = courses.stream()
+				.filter(c -> c.getStudents() >= 100)
+				.collect(Collectors.toMap(
+						c -> c.getName(),
+						c -> c.getStudents()));
+		
+		// BiConsumer
+		courses.stream()
+				.filter(c -> c.getStudents() >= 100)
+				.collect(Collectors.toMap(
+						c -> c.getName(),
+						c -> c.getStudents()))
+				.forEach((name, students) -> System.out.println("The course "
+						+ name + " has " + students + " students"));
+		
+		/*
+		 * Datas
+		 */
+		LocalDate today = LocalDate.now();
+		
+		LocalDate birthday = LocalDate.of(1995, Month.JANUARY, 19);
+		
+		int month = birthday.getMonthValue();
+		
+		Period period = Period.between(birthday, today);
+		long totalDays = ChronoUnit.DAYS.between(birthday, today);
+		System.out.println(totalDays);
+
+		DateTimeFormatter formater = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		
+		System.out.println(birthday.format(formater));
+		
+		LocalDateTime now = LocalDateTime.now();
+		System.out.println(now.format(DateTimeFormatter.ofPattern("dd/MM/yyyy hh:mm:ss")));
 		
 	}
 
