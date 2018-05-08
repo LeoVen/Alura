@@ -1,11 +1,14 @@
 # conda create -n MachineLearning python=2.7 scikit-learn pandas
-# using busca_01.csv
+# using busca_02.csv
+# 08/05/2018 
 
 import pandas as pd
 from sklearn.naive_bayes import MultinomialNB
+from collections import Counter
+
 
 def main():
-	data = pd.read_csv('data/busca_01.csv')
+	data = pd.read_csv('data/busca_02.csv')
 
 	# These are dataframes
 	X_df = data[['home', 'busca', 'logado']]
@@ -32,6 +35,12 @@ def main():
 	X_tests = X[-test_size:]
 	Y_tests = Y[-test_size:]
 
+	# -------------------------------------------------- #
+	# The efficiency of a simplified algorithm
+	rate = 100.0 * max(Counter(Y_tests).itervalues()) / len(Y_tests)
+	print "Hit rate of a simple algorithm : " + str(rate) + "%"
+	# -------------------------------------------------- #
+
 	model = MultinomialNB()
 
 	# Training model
@@ -41,8 +50,8 @@ def main():
 	result = model.predict(X_tests)
 
 	# Checking the difference
-	diff = result - Y_tests
-	correct_Y = [d for d in diff if d == 0]
+	diff = (result == Y_tests)
+	correct_Y = [d for d in diff if d]
 
 	total_correct = len(correct_Y)
 	total_elements = len(X_tests)
@@ -50,6 +59,7 @@ def main():
 	# Hit rate
 	rate = 100.0 * total_correct / total_elements
 
+	print "\nMachine Learning Algorithm"
 	print "Hit rate: " + str(rate) + "%"
 	print "Tested cases: " + str(len(X_tests))
 
