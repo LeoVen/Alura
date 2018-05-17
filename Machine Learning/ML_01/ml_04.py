@@ -1,6 +1,5 @@
 # conda create -n MachineLearning python=2.7 scikit-learn pandas
 # using busca_02.csv
-# 08/05/2018 
 
 import pandas as pd
 from sklearn.naive_bayes import MultinomialNB
