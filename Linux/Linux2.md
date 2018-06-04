@@ -73,3 +73,35 @@ Contagem de linhas em um arquivo
 Contagem de Arquivos
 
     ls -l | wc -l
+
+## apt
+
+O apt é um package manager usado para baixar pacotes e programas.
+
+    apt-get update - Usado para fazer update da lista de pacotes
+    apt-get install <package_name> - Usado para instalar pacotes
+    apt-get remove <package_name> - Usado para remover pacotes instalados
+    apt list --installed - Listar pacotes instalados
+    apt-cache search <something> - Usado para buscar algo na lista de pacotes
+
+## dpkg
+
+Usado para instalar programas que não estão listados. Na internet podemos baixar arquivos com a extensão ```.deb``` e usar o comando ```dpkg``` com a flag ```i``` para instalar o pacote.
+
+    dpkg -i <file_name>.deb
+    dpkg -r <package_name> - Remover o pacote instalado com dpkg
+
+## Service
+
+Usado para e reinicializar um serviço.
+
+    /etc/init.d - Onde os serviços estão localizados
+    service <service_name> start/stop/status - Comandos sobre serviços
+
+## SSH
+
+    apt-get install ssh
+    ssh <user_name>@<ip_address> - Conectar remotamente
+    scp <file_name> <user_name>@<ip_address>:/path/to/file - Enviar arquivos
+
+Para copiar um arquivo de maneira recursiva usando ```scp``` é preciso usar a flag ```-r```.
