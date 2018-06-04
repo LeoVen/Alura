@@ -103,3 +103,6 @@ Uma Rede da classe B com endereço IP ```K.X.Y.Z``` :
 	Máscara de Rede : 255.255.255.0
 	Reservado para o endereço de rede : K.X.Y.0
 	Reservado para broadcast : K.X.Y.255
+
+## DHCP
+
