@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIR=~/Documents/GitHub/Alura/Bash/imagens-livros 
+DIR=~/Documents/GitHub/Alura/Bash/imagens-livros
 PNGDIR=$DIR/png
 
 convert_image() {
