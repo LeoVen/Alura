@@ -1,38 +1,32 @@
 # conda create -n MachineLearning python=2.7 scikit-learn pandas
-# using data/clas.csv
+# Using data/clas.csv
 
+import numpy as np
 import pandas as pd
 from sklearn.ensemble import AdaBoostClassifier
 from collections import Counter
+from sklearn.cross_validation import cross_val_score
 from sklearn.svm import LinearSVC
 from sklearn.naive_bayes import MultinomialNB
-from sklearn.multiclass import OneVsRestClassifier
-from sklearn.multiclass import OneVsOneClassifier
+from sklearn.multiclass import OneVsRestClassifier, OneVsOneClassifier
 
 
-def fit_and_predict(model, X_train, Y_train, X_tests, Y_tests):
+def fit_and_predict(model, X_train, Y_train, kfold):
 
-	# Training model
-	model.fit(X_train, Y_train)
+	# Training model with kfold
+	scores = cross_val_score(model, X_train, Y_train, cv = kfold)
 
-	# Predicting
-	result = model.predict(X_tests)
-
-	# Checking the difference
-	diff = (result == Y_tests)
-	correct_Y = [d for d in diff if d]
-
-	total_correct = len(correct_Y)
-	total_elements = len(X_tests)
-
-	# Hit rate
-	rate = 100.0 * total_correct / total_elements
+	result = np.mean(scores)
 
 	print "\n{0} Machine Learning Algorithm".format(model.__class__.__name__)
-	print "Hit rate: " + str(rate) + "%"
-	print "Tested cases: " + str(len(X_tests))
+	print "Hit rate: " + str(result * 100) + "%"
+	print "Total tested: " + str(len(Y_train))
+	print "Kfolds: " + str(kfold)
+	print "Scores: "
+	print scores
 
-	return rate
+	return result * 100
+
 
 def main():
 	data = pd.read_csv('data/clas.csv')
@@ -49,28 +43,25 @@ def main():
 	X = X_dummies_df.values
 	Y = Y_dummies_df.values
 
-	# 80% of data for training
-	# 10% of data for tests
-	# 10% of data for real cases
-	p = 0.8
-	pt = 0.1
+	# 80% of data for training and testing
+	# 20% of data for real cases
+	t = 0.8
 
 	l = len(X)
 
-	X_train = X[:int(l * p)]
-	Y_train = Y[:int(l * p)]
+	X_train = X[:int(l * t)]
+	Y_train = Y[:int(l * t)]
 
-	X_tests = X[int(l * p) : int(l * (p + pt))]
-	Y_tests = Y[int(l * p) : int(l * (p + pt))]
-
-	X_eval = X[int((l * (p + pt))):]
-	Y_eval = Y[int((l * (p + pt))):]
+	X_eval = X[int(l * t):]
+	Y_eval = Y[int(l * t):]
 
 	# -------------------------------------------------- #
 	# The efficiency of a simplified algorithm
-	rate = 100.0 * max(Counter(Y_tests).itervalues()) / len(Y_tests)
-	print "Hit rate of a simple algorithm : " + str(rate) + "%"
+	rate = 100.0 * max(Counter(Y_train).itervalues()) / len(Y_train)
+	print "\nHit rate of a simple algorithm : " + str(rate) + "%"
 	# -------------------------------------------------- #
+
+	kfold = 10
 
 	mnb_model = MultinomialNB()
 
@@ -80,13 +71,13 @@ def main():
 
 	ovo_model = OneVsOneClassifier(LinearSVC(random_state = 0))
 
-	mnb_rate = fit_and_predict(mnb_model, X_train, Y_train, X_tests, Y_tests)
+	mnb_rate = fit_and_predict(mnb_model, X_train, Y_train, kfold)
 
-	ada_rate = fit_and_predict(ada_model, X_train, Y_train, X_tests, Y_tests)
+	ada_rate = fit_and_predict(ada_model, X_train, Y_train, kfold)
 
-	ovr_rate = fit_and_predict(ovr_model, X_train, Y_train, X_tests, Y_tests)
+	ovr_rate = fit_and_predict(ovr_model, X_train, Y_train, kfold)
 
-	ovo_rate = fit_and_predict(ovo_model, X_train, Y_train, X_tests, Y_tests)
+	ovo_rate = fit_and_predict(ovo_model, X_train, Y_train, kfold)
 
 	results = {}
 
@@ -97,6 +88,8 @@ def main():
 
 	# Set winning model
 	winner = results[max(results)]
+
+	winner.fit(X_train, Y_train)
 
 	# Final test with winning model
 	# Predicting
