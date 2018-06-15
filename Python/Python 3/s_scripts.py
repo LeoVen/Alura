@@ -62,6 +62,16 @@ def main():
 	print(11/3)
 	print(11//3)
 
+	print("HELLO WORLD".lower())
+	print("lorem ipsum".upper())
+	print("fire AND BLood".capitalize())
+
+	print("Banana".endswith("na"))
+	print("Banana".startswith("Ba"))
+
+	print(" Au str ali a".strip(" "))
+	print(" Au str ali a".replace(" ", ""))
+
 
 if __name__ == "__main__":
 	main()
