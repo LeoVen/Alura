@@ -1,5 +1,5 @@
 # #
-# calculator.py
+# tax_calculator.py
 #
 # Leonardo Vencovsky (https://github.com/LeoVen)
 #

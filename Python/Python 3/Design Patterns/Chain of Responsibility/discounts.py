@@ -1,5 +1,5 @@
 # #
-# taxes.py
+# discounts.py
 #
 # Leonardo Vencovsky (https://github.com/LeoVen)
 #

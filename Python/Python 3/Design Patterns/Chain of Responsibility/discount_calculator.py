@@ -1,13 +1,11 @@
 # #
-# calculator.py
+# discount_calculator.py
 #
 # Leonardo Vencovsky (https://github.com/LeoVen)
 #
 # 25/07/2018
 #
 # #
-
-# Strategy Pattern
 
 from budget import Budget, Item
 from discounts import Discount_1, Discount_2, Discount_Null
