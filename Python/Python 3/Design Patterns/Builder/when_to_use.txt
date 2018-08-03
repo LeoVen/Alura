@@ -1,0 +1,3 @@
+Sempre que tivermos um objeto complexo de ser criado, que possui diversos atributos, ou que possui uma lógica de criação complicada, podemos esconder tudo isso em um Builder.
+
+Porém, na linguagem Python, esse pattern muitas vezes é desnecessário, já que parâmetros nomeados e opcionais do construtor de classes podem muitas vezes lidar com a complexidade de criação do objeto.
