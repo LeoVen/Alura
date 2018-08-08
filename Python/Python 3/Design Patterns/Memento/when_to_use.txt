@@ -1,0 +1,3 @@
+O Memento é um padrão de projeto que nos ajuda a salvar e restaurar estados de objetos.
+
+Um possível problema é a quantidade de memória que ele pode ocupar, afinal estamos guardando muitas instâncias de objetos que podem ser pesados.

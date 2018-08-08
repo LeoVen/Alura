@@ -1,0 +1,1 @@
+O padrão Interpreter é geralmente útil para interpretar DSLs (Domain-Specific Language)

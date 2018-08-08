@@ -106,3 +106,6 @@ Uma Rede da classe B com endereço IP ```K.X.Y.Z``` :
 
 ## DHCP
 
+Os servidores DHCP (Dynamic Host Configuration Protocol) alocam dinamicamente endereços IPs a clientes (máquinas).
+
+Quando um endereço IP é atribuído a uma máquina, dizemos que a configuração foi dinamicamente alocado. Os servidores DHCP normalmente possuem o que chamamos de “lease time”, ou seja possui um tempo de alocação de um endereço IP a uma máquina, quando esse tempo é expirado é preciso ocorrer uma renovação de endereço IP.
