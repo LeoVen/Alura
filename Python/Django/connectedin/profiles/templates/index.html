@@ -6,5 +6,16 @@
 </head>
 <body>
 	<h1>Welcome to Connected In</h1>
+	{% if profiles %}
+	<ul>
+		{% for p in profiles %}
+		<li>
+			<a href="{% url 'profile_page' p.id %}">{{p.name}} / {{p.email}}</a>
+		</li>
+		{% endfor %}
+	</ul>
+	{% else %}
+	<p>No profiles were found</p>
+	{% endif %}
 </body>
 </html>
