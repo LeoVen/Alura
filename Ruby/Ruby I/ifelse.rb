@@ -6,6 +6,7 @@
 # 20/08/2018
 #
 # #
+
 puts "Write a number"
 
 number = gets.chomp.to_i

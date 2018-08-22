@@ -6,6 +6,7 @@
 # 20/08/2018
 #
 # #
+
 puts "What is your name?"
 
 # .chomp removes \n

@@ -22,6 +22,12 @@ for x in 1..limit
 	end
 end
 
+# Break if
+for x in 1..limit
+	puts x
+	break if x % 4 == 0
+end
+
 secret_number = 65465
 tries = 0
 found = false
