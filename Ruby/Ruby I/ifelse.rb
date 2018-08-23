@@ -24,3 +24,11 @@ if number % 2 != 0
 else
 	puts "Your number is divisible by 2!"
 end
+
+for x in 1..10
+
+	# if !(x % 2 == 0)
+	unless x % 2 == 0
+		puts "#{x} is an odd number!"
+	end
+end

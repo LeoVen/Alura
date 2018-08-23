@@ -20,6 +20,8 @@ def power(a, b)
 	end
 
 	return r
+	# this returns r implicitly
+	# r
 end
 
 def factorial(a)
