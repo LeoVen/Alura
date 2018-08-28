@@ -1,5 +1,5 @@
 # #
-# loop0.py
+# loop0.rb
 #
 # Leonardo Vencovsky (https://github.com/LeoVen)
 #

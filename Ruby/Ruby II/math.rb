@@ -1,5 +1,5 @@
 # #
-# math.py
+# math.rb
 #
 # Leonardo Vencovsky (https://github.com/LeoVen)
 #

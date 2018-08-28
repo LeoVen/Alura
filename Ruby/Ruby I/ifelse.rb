@@ -1,5 +1,5 @@
 # #
-# ifelse.py
+# ifelse.rb
 #
 # Leonardo Vencovsky (https://github.com/LeoVen)
 #

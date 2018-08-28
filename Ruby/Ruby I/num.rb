@@ -1,5 +1,5 @@
 # #
-# num.py
+# num.rb
 #
 # Leonardo Vencovsky (https://github.com/LeoVen)
 #

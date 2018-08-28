@@ -1,21 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Welcome to Connected In</title>
-</head>
-<body>
-	<h1>Welcome to Connected In</h1>
-	{% if profiles %}
-	<ul>
-		{% for p in profiles %}
-		<li>
-			<a href="{% url 'profile_page' p.id %}">{{p.name}} / {{p.email}}</a>
-		</li>
-		{% endfor %}
-	</ul>
-	{% else %}
-	<p>No profiles were found</p>
-	{% endif %}
-</body>
-</html>
+{% extends "base.html" %}
+{% block body %}
+<div class="col-lg-12">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<strong>All Profiles</strong>
+		</div>
+		{% if profiles %}
+		<ul>
+			{% for p in profiles %}
+			<li>
+				<a href="{% url 'profile_page' p.id %}">{{p.name}} / {{p.email}}</a>
+			</li>
+			{% endfor %}
+		</ul>
+		{% else %}
+		<p>No profiles were found</p>
+		{% endif %}
+	</div>
+</div>
+{% endblock %}

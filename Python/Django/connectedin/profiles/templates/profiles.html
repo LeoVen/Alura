@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Profiles</title>
-</head>
-<body>
-	<h1>Profile Details</h1>
-	name: {{profiles.name}},
-	email: {{profiles.email}},
-	phone: {{profiles.phone}}
-</body>
-</html>
+{% extends "base.html" %} {% block body %}
+<div class="row">
+	<div class="col-lg-12">
+		<h2>{{ profiles.name }}</h2>
+		<address>
+			<abbr title="Phone">Phone: </abbr> {{ profiles.phone }} <br>
+			<a href="mailto:{{ profiles.email }}">{{ profiles.email }}</a>
+		</address>
+		<a href="{% url 'invite' profiles.id %}"></a>
+	</div>
+</div>
+{% endblock %}

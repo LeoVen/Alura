@@ -1,5 +1,5 @@
 # #
-# func.py
+# func.rb
 #
 # Leonardo Vencovsky (https://github.com/LeoVen)
 #

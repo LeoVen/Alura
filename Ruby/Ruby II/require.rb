@@ -1,5 +1,5 @@
 # #
-# require.py
+# require.rb
 #
 # Leonardo Vencovsky (https://github.com/LeoVen)
 #

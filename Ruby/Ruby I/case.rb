@@ -1,5 +1,5 @@
 # #
-# case.py
+# case.rb
 #
 # Leonardo Vencovsky (https://github.com/LeoVen)
 #

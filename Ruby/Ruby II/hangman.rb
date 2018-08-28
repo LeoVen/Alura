@@ -1,5 +1,5 @@
 # #
-# hangman.py
+# hangman.rb
 #
 # Leonardo Vencovsky (https://github.com/LeoVen)
 #
