@@ -1,6 +1,3 @@
-
-
-
 function Add-ApplicationPool {
     param(
         [String[]] $ComputersName,
