@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alura Typer</title>
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/libs/google-fonts.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="center">Alura Typer</h1>
+        <p id="phrase">One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them.</p>
+
+        <ul id="score_info" class="center">
+            <li>
+                <i class="small material-icons icons">description</i>
+                <span id="words_goal">23</span> words
+            </li>
+            <li>
+                <i class="small material-icons icons">query_builder</i>
+                <span id="seconds_goal">20</span> seconds
+            </li>
+        </ul>
+
+        <textarea name="words_input" id="words_input" cols="40" rows="10"></textarea>
+
+        <div id="button_group">
+            <a id="restart_game" class="btn-floating btn-large waves-effect waves-light red">
+                <i class="material-icons">restore</i>
+            </a>
+        </div>
+
+        <ul id="counters" class="center">
+            <li><span id="words_counter">0</span> words</li>
+            <li><span id="letter_counter">0</span> letters</li>
+        </ul>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
