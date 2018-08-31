@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <section class="container">
         <h1 class="center">Alura Typer</h1>
         <p id="phrase">One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them.</p>
 
@@ -37,10 +37,31 @@
             <li><span id="words_counter">0</span> words</li>
             <li><span id="letter_counter">0</span> letters</li>
         </ul>
-    </div>
+
+    </section>
+
+    <section id="scoreboard" class="container">
+        <h3 class="center">Score</h3>
+        <table class="centered bordered striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Number of words</th>
+                    <th>Number of letters</th>
+                    <th>Remover</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </section>
+
+    <div style="margin: 200px;"></div>
 
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/score.js"></script>
 </body>
 
 </html>

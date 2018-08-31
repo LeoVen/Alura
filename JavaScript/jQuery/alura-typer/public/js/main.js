@@ -15,6 +15,9 @@ $(document).ready(function () {
 	restartGame();
 	borderInit();
 
+
+
+
 });
 
 // Word and letter counters update function wrapper
@@ -62,6 +65,9 @@ function startClock() {
 				$("#words_input").toggleClass("gray_bg");
 
 				clearInterval(interval_id);
+
+				// Add to scoreboard
+				scoreAdd();
 			}
 
 		}, 1000);
