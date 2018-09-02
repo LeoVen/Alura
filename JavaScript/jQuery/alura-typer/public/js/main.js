@@ -14,8 +14,11 @@ $(document).ready(function () {
 	startClock();
 	restartGame();
 	borderInit();
+	$("#scoreboard").toggle();
 
-
+	$("#show_score").on("click", function () {
+		scoreShow();
+	});
 
 
 });
@@ -92,7 +95,7 @@ function restartGame() {
 			field.val("");
 
 			// Reset timer
-			$("#seconds_goal").text("20");
+			$("#seconds_goal").text("3");
 
 			// Reset word/letter counters
 			$("#words_counter").text("0");

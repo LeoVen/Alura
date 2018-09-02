@@ -14,10 +14,23 @@ function scoreAdd() {
 	var row = scoreBuilder(user, words, letters);
 
 	// Adding event
-	row.find(".remove_score").on("click", removeScore);
+	row.find(".remove_score").on("click", scoreRemove);
 
 	table.prepend(row);
 
+	$("#scoreboard").slideDown(500);
+
+	scoreScroll();
+}
+
+// Function that animates scoreboard scroll, called when timer is finished
+function scoreScroll() {
+	var pos = $("#scoreboard").offset().top;
+
+    $("body").animate(
+    {
+        scrollTop: pos + "px"
+    }, 1000);
 }
 
 // Building score html with jQuery
@@ -45,10 +58,22 @@ function scoreBuilder(user, words, letters) {
 }
 
 // Remove score event wrapper
-function removeScore() {
+function scoreRemove() {
 
 	event.preventDefault();
 
-	$(this).parent().parent().remove();
+	var row = $(this).parent().parent();
 
+	row.fadeOut(500);
+	
+	setTimeout(function () {
+		row.remove();
+	}, 600);
+
+}
+
+// Shows scoreboard
+function scoreShow() {
+	// Stop is used to stop all current animations
+	$("#scoreboard").stop().slideToggle(600);
 }

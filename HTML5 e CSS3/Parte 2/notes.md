@@ -25,3 +25,26 @@
 |vmax|Relative to 1% of viewport's larger dimension|
 |%|Relative to the parent element|
 
+### Vendor Prefixes
+
+Chrome/Safari
+```CSS
+-webkit-border-radius: 10px;
+```
+
+Firefox
+```CSS
+-moz-border-radius: 10px;
+```
+
+Internet Explorer/Edge
+```CSS
+-ms-border-radius: 10px;
+```
+
+Opera
+```CSS
+-o-border-radius: 10px;
+```
+
+https://caniuse.com/

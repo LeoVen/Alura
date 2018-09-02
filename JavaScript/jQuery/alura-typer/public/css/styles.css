@@ -1,3 +1,7 @@
+body {
+	overflow: scroll;
+}
+
 .phrase {
 	font-size: 20px;
 	text-align: justify;
