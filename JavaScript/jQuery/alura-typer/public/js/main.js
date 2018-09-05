@@ -8,18 +8,26 @@
 //
 // Works the same as below
 
+// Global variables
+
 $(document).ready(function () {
 
 	updateScores();
 	startClock();
 	restartGame();
 	borderInit();
+
 	$("#scoreboard").toggle();
 
+	// Shows score
+	// Function located in score.js
 	$("#show_score").on("click", function () {
 		scoreShow();
 	});
 
+	// Getting phrases from node server
+	// Function located in phrase.js
+	$("#get_phrase").on("click", phraseRandom);
 
 });
 
@@ -44,6 +52,19 @@ function updateScores() {
 		$("#letter_counter").text($("#words_input").val().length);
 
 	});
+}
+
+function updatePhraseLength() {
+
+	if ($("#phrase").text().match(/\S+/g) === null) {
+		var count = 0;
+	}
+	else {
+		var count = $("#phrase").text().match(/\S+/g).length;
+	}
+
+	$("#words_goal").text(count);
+
 }
 
 // User on focus event function wrapper
@@ -84,9 +105,9 @@ function restartGame() {
 	// Restart game button event
 	$("#restart_game").on("click", function () {
 
-		var seconds = $("#seconds_goal").text();
+		var time = $("#seconds_goal").text();
 
-		if (seconds === "0") {
+		if (time === "0") {
 
 			var field = $("#words_input");
 
