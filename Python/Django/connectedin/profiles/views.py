@@ -4,7 +4,7 @@ from profiles.models import Profile
 # Create your views here.
 
 def index(request):
-	return render(request, "index.html", {"profiles":Profile.objects.all()})
+	return render(request, "index.html", {"profiles":Profile.objects.all(), "current_profile":get_logged_in(request)})
 
 def show(request, profile_id):
 

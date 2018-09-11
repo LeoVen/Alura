@@ -17,5 +17,24 @@
 		<p>No profiles were found</p>
 		{% endif %}
 	</div>
+	<div class="panel panel-default">
+		{% if current_profile.received_invitations.count %}
+		<div class="panel-heading">
+			<strong>invitations awaiting approval</strong>
+		</div>
+		<ul class="list-group">
+			{% for invite in current_profile.received_invitations.all %}
+			<li class="list-group-item">
+				{{ invite.requester.name }}
+				<a href="#" class="pull-right">Accept</a>
+			</li>
+			{% endfor %}
+		</ul>
+		{% else %}
+		<div class="panel-body">
+			<p>No invitation received</p>
+		</div>
+		{% endif %}
+	</div>
 </div>
 {% endblock %}
