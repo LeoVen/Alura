@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+
+<body>
+
+	<%= nav_bar brand: "Kunstee", brand_link: root_url %>
+
+	<div class="container">
+
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th>Nome</th>
+					<th>Descrição</th>
+					<th>Preço</th>
+					<th>Quantidade</th>
+				</tr>
+			</thead>
+			<tbody>
+				<% @todos_produtos.each do |produto| %>
+				<tr>
+					<td><%= produto.nome %></td>
+					<td><%= produto.descricao %></td>
+					<td><%= produto.preco %></td>
+					<td><%= produto.quantidade %></td>
+				</tr>
+				<% end %>
+			</tbody>
+		</table>
+
+
+	</div>
+
+</body>
+
+</html>
