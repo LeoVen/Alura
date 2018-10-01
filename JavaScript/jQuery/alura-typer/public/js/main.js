@@ -1,163 +1,93 @@
-// jQuery
+var tempoInicial = $("#tempo-digitacao").text();
+var campo = $(".campo-digitacao");
 
-// You can also user:
-//
-// $(function () {
-// 
-// });
-//
-// Works the same as below
+$(function() {
+    atualizaTamanhoFrase();
+    inicializaContadores();
+    inicializaCronometro();
+    inicializaMarcadores();
+    $("#botao-reiniciar").click(reiniciaJogo);
+    atualizaPlacar();
 
-// Global variables
+    $("#usuarios").selectize({
+        create: true,
+        sortField: 'text'
+    });
 
-$(document).ready(function () {
-
-	updateScores();
-	startClock();
-	restartGame();
-	borderInit();
-
-	$("#scoreboard").toggle();
-
-	// Shows score
-	// Function located in score.js
-	$("#show_score").on("click", function () {
-		scoreShow();
-	});
-
-	// Getting phrases from node server
-	// Function located in phrase.js
-	$("#get_phrase").on("click", phraseRandom);
-
+    $(".tooltip").tooltipster({
+        trigger: "custom"
+    });
 });
 
-// Word and letter counters update function wrapper
-function updateScores() {
-
-	// Textarea user input event to update word and letter counters
-	// .on("input") event
-	$("#words_input").on("input", function () {
-
-		// .text() returns text inside the tag
-		// .match(" ") matches regex expression
-		// .length length of array returned by match()
-		if ($("#words_input").val().match(/\S+/g) === null) {
-			var count = 0;
-		}
-		else {
-			var count = $("#words_input").val().match(/\S+/g).length;
-		}
-
-		$("#words_counter").text(count);
-		$("#letter_counter").text($("#words_input").val().length);
-
-	});
+function atualizaTempoInicial(tempo) {
+    tempoInicial = tempo;
+    $("#tempo-digitacao").text(tempo);
 }
 
-function updatePhraseLength() {
+function atualizaTamanhoFrase() {
+    var frase = $(".frase").text();
+    var numPalavras  = frase.split(" ").length;
+    var tamanhoFrase = $("#tamanho-frase");
 
-	if ($("#phrase").text().match(/\S+/g) === null) {
-		var count = 0;
-	}
-	else {
-		var count = $("#phrase").text().match(/\S+/g).length;
-	}
-
-	$("#words_goal").text(count);
-
+    tamanhoFrase.text(numPalavras);
 }
 
-// User on focus event function wrapper
-function startClock() {
+function inicializaContadores() {
+    campo.on("input", function() {
+        var conteudo = campo.val();
 
-	// Textarea user focus event to start clock
-	// .one("focus") event executes only once
-	$("#words_input").one("focus", function () {
+        var qtdPalavras = conteudo.split(/\S+/).length - 1;
+        $("#contador-palavras").text(qtdPalavras);
 
-		// Seconds interval
-		var interval_id = setInterval(function () {
-
-			var seconds = $("#seconds_goal").text();
-
-			$("#seconds_goal").text(seconds -= 1);
-
-			// Lock textarea and stop interval
-			if (seconds < 1) {
-
-				$("#words_input").attr("disabled", true);
-
-				$("#words_input").toggleClass("gray_bg");
-
-				clearInterval(interval_id);
-
-				// Add to scoreboard
-				scoreAdd();
-			}
-
-		}, 1000);
-
-	});
+        var qtdCaracteres = conteudo.length;
+        $("#contador-caracteres").text(qtdCaracteres);
+    });
 }
 
-// Restart game function wrapper
-function restartGame() {
+function inicializaMarcadores() {
+    campo.on("input", function() {
+        var frase = $(".frase").text();
+        var digitado = campo.val();
+        var comparavel = frase.substr(0, digitado.length);
 
-	// Restart game button event
-	$("#restart_game").on("click", function () {
-
-		var time = $("#seconds_goal").text();
-
-		if (time === "0") {
-
-			var field = $("#words_input");
-
-			// Reset textarea
-			field.attr("disabled", false);
-			field.val("");
-
-			// Reset timer
-			$("#seconds_goal").text("3");
-
-			// Reset word/letter counters
-			$("#words_counter").text("0");
-			$("#letter_counter").text("0");
-
-			field.toggleClass("gray_bg");
-
-			field.removeClass("border_red");
-			field.removeClass("border_green");
-
-			startClock();
-		}
-
-	});
-
+        if (digitado == comparavel) {
+            campo.addClass("borda-verde");
+            campo.removeClass("borda-vermelha");
+        } else {
+            campo.addClass("borda-vermelha");
+            campo.removeClass("borda-verde");
+        }
+    });
 }
 
-// Function wrapper that checks if text written equals to target text and
-// changes textarea border
-function borderInit() {
+function inicializaCronometro() {
+    campo.one("focus", function() {
+        var tempoRestante = $("#tempo-digitacao").text();
+    	var cronometroID = setInterval(function() {
+    		tempoRestante--;
+    		$("#tempo-digitacao").text(tempoRestante);
+    		if (tempoRestante < 1) {
+                clearInterval(cronometroID);
+                finalizaJogo();
+    		}
+    	}, 1000);
+    });
+}
 
-	$("#words_input").on("input", function () {
+function finalizaJogo() {
+    campo.attr("disabled", true);
+    campo.toggleClass("campo-desativado");
+    inserePlacar();
+}
 
-		var field = $("#words_input");
-
-		var target_text = $("#phrase").text();
-		var written_text = $("#words_input").val();
-
-		var comparable = target_text.substr(0, written_text.length);
-
-		if (written_text === comparable) {
-
-			field.addClass("border_green");
-			field.removeClass("border_red");
-
-		} else {
-
-			field.addClass("border_red");
-			field.removeClass("border_green");
-
-		}
-
-	});
+function reiniciaJogo() {
+    campo.attr("disabled", false);
+    campo.val("");
+    $("#contador-palavras").text(0);
+    $("#contador-caracteres").text(0);
+    $("#tempo-digitacao").text(tempoInicial);
+    inicializaCronometro();
+    campo.toggleClass("campo-desativado");
+    campo.removeClass("borda-vermelha");
+    campo.removeClass("borda-verde");
 }

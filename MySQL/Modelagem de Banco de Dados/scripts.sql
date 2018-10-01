@@ -16,3 +16,8 @@ create table books
 	index indice_por_lancamento (data_de_lancamento),
 	autor_id integer not null
 );
+
+alter table usuarios change email_1 email_primario varchar(100);
+alter table usuarios change email_2 email_secundario varchar(100);
+
+alter table receitas drop column valor_total;

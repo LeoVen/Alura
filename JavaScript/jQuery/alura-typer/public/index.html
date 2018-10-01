@@ -1,74 +1,57 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Alura Typer</title>
     <link rel="stylesheet" href="css/libs/materialize.min.css">
-    <link rel="stylesheet" href="css/libs/google-fonts.css">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+    <link href="css/libs/google-fonts.css" rel="stylesheet">
 
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+    <link href="css/index.css" rel="stylesheet">
+</head>
 <body>
     <section class="container">
-        <h1 class="center">Alura Typer</h1>
-        <p id="phrase">One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them.</p>
-
-        <ul id="score_info" class="center">
-            <li>
-                <i class="small material-icons icons">description</i>
-                <span id="words_goal">23</span> words
-            </li>
-            <li>
-                <i class="small material-icons icons">query_builder</i>
-                <span id="seconds_goal">3</span> seconds
-            </li>
-        </ul>
-
-        <textarea name="words_input" id="words_input" cols="40" rows="10"></textarea>
-
-        <div id="button_group">
-            <a id="restart_game" class="btn-floating btn-large tooltipped waves-effect waves-light red" data-position="left" data-tooltip="Restart">
-                <i class="material-icons">restore</i>
-            </a>
-            <a id="show_score" class="btn-floating btn-large waves-effect waves-light green">
-                <i class="material-icons">assignment</i>
-            </a>
-            <a id="get_phrase" class="btn-floating btn-large waves-effect waves-light blue">
-                <i class="material-icons">shuffle</i>
-            </a>
+        <h1 class="center titulo header">Alura typer</h1>
+        <div class="slider">
+            <img src="img/slide1.png" class="imagem-jogo">
+            <img src="img/slide2.png" class="imagem-jogo">
+            <img src="img/slide3.png" class="imagem-jogo">
         </div>
+        <hr>
+        <p class="flow-text center">Teste sua velocidade competindo contra seus amigos!</p>
+        <div class="card">
+           <div class="card-image">
+             <!-- <img src="images/sample-1.jpg"> -->
+           </div>
+           <div class="card-content">
+             <p>Placar dinâmico! Sincronizando com o servidor!</p>
+           </div>
+           <div class="card-action">
+             <a href="principal.html">Experimente agora!</a>
+           </div>
+         </div>
+         <div class="card">
+           <div class="card-image">
+             <!-- <img src="img/sl.jpg"> -->
+           </div>
+           <div class="card-content">
+             <p>Frases aleatórias ou escolha diretamente em qual delas você quer competir!</p>
+           </div>
+           <div class="card-action">
+             <a href="principal.html">Experimente agora!</a>
+           </div>
+         </div>
 
-        <ul id="counters" class="center">
-            <li><span id="words_counter">0</span> words</li>
-            <li><span id="letter_counter">0</span> letters</li>
-        </ul>
+         <a class="waves-effect waves-light btn-large orange" id="botao-jogue" href="principal.html">Jogue agora!</a>
 
     </section>
-
-    <section id="scoreboard" class="container">
-        <h3 class="center">Score</h3>
-        <table class="centered bordered striped">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Number of words</th>
-                    <th>Number of letters</th>
-                    <th>Remover</th>
-                </tr>
-            </thead>
-            <tbody>
-
-            </tbody>
-        </table>
-    </section>
-
-    <div style="margin: 200px;"></div>
 
     <script src="js/jquery.js"></script>
-    <script src="js/phrase.js"></script>
-    <script src="js/score.js"></script>
-    <script src="js/main.js"></script>
-</body>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/slider.js"></script>
 
+
+</body>
 </html>
