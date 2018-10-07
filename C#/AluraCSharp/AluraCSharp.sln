@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AluraCSharp01", "AluraCSharp01\AluraCSharp01.csproj", "{C2F4E1EB-A76D-488E-A9F1-78D5856975B0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AluraCSharp02", "AluraCSharp02\AluraCSharp02.csproj", "{DC6D6CA8-264C-4833-B517-9BFCD8D5D30C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C2F4E1EB-A76D-488E-A9F1-78D5856975B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2F4E1EB-A76D-488E-A9F1-78D5856975B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2F4E1EB-A76D-488E-A9F1-78D5856975B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC6D6CA8-264C-4833-B517-9BFCD8D5D30C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC6D6CA8-264C-4833-B517-9BFCD8D5D30C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC6D6CA8-264C-4833-B517-9BFCD8D5D30C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC6D6CA8-264C-4833-B517-9BFCD8D5D30C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

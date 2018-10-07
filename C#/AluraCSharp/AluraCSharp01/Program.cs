@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AluraCSharp01
 {
@@ -29,6 +25,38 @@ namespace AluraCSharp01
             double roundTripped17 = double.Parse(valueString17);
             Console.WriteLine("{0:R} = {1:R}: {2}\n",
                               initialValue, roundTripped17, initialValue.Equals(roundTripped17));
+
+            bool boolean = true;
+            char character = 'a';
+            string sequence_of_characters = "Hello World!";
+            int integer = 100;
+            long long_integer = 2000000000000;
+            float floating_point = 222.33f;
+            double long_float = 2411134948271393133139.333312;
+
+            Console.WriteLine(boolean);
+            Console.WriteLine(character);
+            Console.WriteLine(sequence_of_characters);
+            Console.WriteLine(integer);
+            Console.WriteLine(long_integer);
+            Console.WriteLine(floating_point);
+            Console.WriteLine(long_float);
+
+            int number = 100;
+
+            while (number > 0)
+            {
+                number--;
+                Console.Write(number);
+            }
+
+            for (int i = 0, j = 20; i < j; i++, j--)
+            {
+                // Console.WriteLine("Hello " + i + "" + j);
+                Console.WriteLine("Hello " + i + j);
+            }
+
+            Console.ReadLine();
         }
     }
 
