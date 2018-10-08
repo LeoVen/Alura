@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AluraCSharp02
 {
@@ -27,6 +23,16 @@ namespace AluraCSharp02
 
             myClass0.Represent();
             myClass1.Represent();
+
+            Vector v0 = new Vector(-2.0, 4.3, -3.14);
+            Vector v1 = new Vector(5.3, -2.2, 3.0);
+            Vector v2 = new Vector(1.1, -8.3, 0.8);
+
+            Console.WriteLine(v0 + v1);
+            Console.WriteLine(v0 - v1);
+            Console.WriteLine(v0 + v1 - v2);
+
+            Console.WriteLine(Vector.Total);
 
             Console.ReadLine();
         }
