@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>7.2</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\lvenk\Documents\GitHub\Alura\C#\AluraCSharp\AluraCSharpClassLibrary\AluraCSharpClassLibrary.xml</DocumentationFile>
+  </PropertyGroup>
+
+</Project>
