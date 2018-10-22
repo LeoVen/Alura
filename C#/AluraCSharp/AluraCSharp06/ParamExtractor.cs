@@ -23,9 +23,11 @@ namespace AluraCSharp06
 
         public string GetValue(string paramName)
         {
+            string term = paramName + "=";
 
+            int index = _arguments.IndexOf(term);
 
-            return '';
+            return _arguments.Substring(index + term.Length);
         }
     }
 }
