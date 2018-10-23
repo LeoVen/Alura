@@ -45,12 +45,65 @@ namespace AluraCSharp07
                 new MyClass(2)
             };
 
-
             Console.WriteLine(" ");
 
             foreach (MyClass m in anotherArray)
             {
                 m.display();
+            }
+
+            Console.WriteLine(" ");
+
+            MyArrayList<MyClass> list = new MyArrayList<MyClass>(10, 2);
+
+            for (int i = 0; i < 30; i++)
+            {
+                list.Add(new MyClass(i));
+            }
+
+            for (int i = 0; i < list.Length; i++)
+            {
+                list[i].display();
+            }
+
+            Console.WriteLine(" ");
+
+            try
+            {
+                list[40].display();
+            }
+            catch (ArgumentOutOfRangeException e)
+            {
+                Console.WriteLine(e.StackTrace);
+            }
+
+            list.Remove(10);
+            list.Remove(10);
+            list.Remove(10);
+
+            Console.WriteLine(" ");
+
+            for (int i = 0; i < list.Length; i++)
+            {
+                list[i].display();
+            }
+
+            int total = list.AddAll(myArray);
+
+            if (total != 0)
+                Console.WriteLine($"{total} values were not inserted");
+
+            total = list.AddAll(
+                new MyClass(0),
+                new MyClass(1),
+                new MyClass(2)
+            );
+
+            Console.WriteLine(" ");
+
+            for (int i = 0; i < list.Length; i++)
+            {
+                list[i].display();
             }
 
             Console.ReadKey();
@@ -68,7 +121,17 @@ namespace AluraCSharp07
 
         public void display()
         {
-            Console.WriteLine(myNumber);
+            Console.Write($"{myNumber} ");
+        }
+
+        public override bool Equals(object obj)
+        {
+            MyClass myClass = obj as MyClass;
+
+            if (myClass == null)
+                return false;
+
+            return this.myNumber == myClass.myNumber;
         }
     }
 }
