@@ -51,9 +51,32 @@ namespace AluraCSharp08
             myClassList.AddAll(new MyClass(1), new MyClass(2), new MyClass(3));
             myClassList.AddAll(new MyClass(2), new MyClass(3), new MyClass(4));
 
-            IOrderedEnumerable<MyClass> orderedCollection =  myClassList.OrderBy(x => x.MyNumber); // OderBy orders by a specified class property
+            // OderBy orders by a specified class property
+            IOrderedEnumerable<MyClass> orderedCollection =  myClassList.OrderBy(x => x.MyNumber);
 
             foreach (var item in orderedCollection)
+            {
+                item.display();
+            }
+
+            Console.WriteLine(" ");
+
+            // Not null pointers only
+            IEnumerable<MyClass> notNullClassCollection = myClassList.Where(x => x != null);
+
+            foreach (var item in notNullClassCollection)
+            {
+                item.display();
+            }
+
+            Console.WriteLine(" ");
+
+            // Ordered and not null
+            IOrderedEnumerable<MyClass> orderedNotNullCollecion = myClassList
+                .Where<MyClass>(x => x != null)
+                .OrderBy<MyClass, int>(x => x.MyNumber);
+
+            foreach (var item in orderedNotNullCollecion)
             {
                 item.display();
             }

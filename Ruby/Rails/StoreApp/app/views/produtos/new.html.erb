@@ -1,0 +1,27 @@
+<html>
+<body>
+
+<%= form_for Produto.new do |f| %>
+
+  <label for="nome">Nome</label>
+  <input id="nome" type="text" name="produto[nome]"/>
+  <br>
+
+  <label for="descricao">Descrição</label>
+  <textarea id="descricao" name="produto[descricao]"></textarea>
+  <br>
+
+  <label for="quantidade">Quantidade</label>
+  <input id="quantidade" type="number" name="produto[quantidade]"/>
+  <br>
+
+  <label for="preco">Preço</label>
+  <input id="preco" type="number" name="produto[preco]" step="0.01"/>
+  <br>
+
+  <button type="submit">Criar</button>
+
+<% end %>
+
+</body>
+</html>

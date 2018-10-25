@@ -1,5 +1,11 @@
 # notes
 
+## Start Rails server
+
+```
+rails server
+```
+
 ## Commands in the terminal
 
 ```
