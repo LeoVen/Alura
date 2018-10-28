@@ -25,7 +25,12 @@ namespace Collections
 
         public static void SetFunctions()
         {
-            
+            ISet<int> set = new HashSet<int>();
+
+            for (var i = 0; i < 20; i++)
+                set.Add(i);
+
+            Console.WriteLine($"The set {(set.Contains(8) ? "contains" : "dos not contains")} the number 8");
         }
 
         public static void DisplaySet<T>(ISet<T> set, string phrase)

@@ -1,13 +1,7 @@
-class NegociacoesView {
+class NegociacoesView extends View {
 
     constructor(element) {
-
-        this._element = element;
-    }
-
-    update(model) {
-
-        this._element.innerHTML = this._template(model);
+        super(element);
     }
 
     _template(model) {
@@ -44,6 +38,7 @@ class NegociacoesView {
 }
 
 // Immediately-invoked function expression
+// IIFE
 /*
 ${
     (() => {
