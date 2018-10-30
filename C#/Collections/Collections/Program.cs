@@ -26,6 +26,18 @@ namespace Collections
             Display("Set");
             Sets.SetTest();
             Sets.SetFunctions();
+
+            Display("Dictionary");
+            Dictionaries.DictionaryTest();
+
+            Display("Linked List");
+            LinkedLists.LinkedListTest();
+
+            Display("Stack");
+            Stacks.StackTest();
+
+            Display("Queue");
+            Queues.QueueTest();
         }
 
         static void Display(string s)
