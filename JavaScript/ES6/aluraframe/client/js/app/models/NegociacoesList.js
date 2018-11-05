@@ -14,4 +14,9 @@ class NegociacoesList {
 
         return [].concat(this._negociacoes);
     }
+
+    empty() {
+
+        this._negociacoes = [];
+    }
 }

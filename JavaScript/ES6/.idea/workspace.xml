@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85119142-0655-40c0-9f5a-ebd37e24e156" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../C#/Collections/Collections/Collections.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/Collections/Collections/Collections.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/Collections/Collections/Dictionaries.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/Collections/Collections/Dictionaries.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/Collections/Collections/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/Collections/Collections/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aluraframe/client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/aluraframe/client/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aluraframe/client/js/app/controllers/NegociacaoController.js" beforeDir="false" afterPath="$PROJECT_DIR$/aluraframe/client/js/app/controllers/NegociacaoController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aluraframe/client/js/app/models/NegociacoesList.js" beforeDir="false" afterPath="$PROJECT_DIR$/aluraframe/client/js/app/models/NegociacoesList.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,38 +23,41 @@
     <session id="-853953191">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.32" value="1" />
-          <entry key="project.open.time.33" value="1" />
+          <entry key="project.open.time.33" value="2" />
           <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.41" value="1" />
+          <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.59" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.66" value="1" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="1" />
-          <entry key="js" value="14" />
+          <entry key="js" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="JavaScript" value="10" />
+          <entry key="JavaScript" value="13" />
           <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="234" />
-          <entry key="js" value="5042" />
+          <entry key="html" value="251" />
+          <entry key="js" value="6109" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="265" />
-          <entry key="JavaScript" value="4884" />
+          <entry key="HTML" value="282" />
+          <entry key="JavaScript" value="5951" />
           <entry key="PLAIN_TEXT" value="127" />
         </counts>
       </usages-collector>
@@ -59,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aluraframe/client/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1081">
-              <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="48" />
+            <state relative-caret-position="851">
+              <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -83,11 +92,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aluraframe/client/js/app/views/NegociacoesView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+            <state relative-caret-position="414">
+              <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/aluraframe/client/js/app/models/NegociacoesList.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/aluraframe/client/js/app/controllers/NegociacaoController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
             </state>
           </provider>
         </entry>
@@ -105,7 +132,7 @@
         <entry file="file://$PROJECT_DIR$/aluraframe/client/js/app/models/Mensagem.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="69">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -122,6 +149,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>valor</find>
+      <find>model</find>
     </findStrings>
     <replaceStrings>
       <replace>value</replace>
@@ -137,13 +165,13 @@
         <option value="$PROJECT_DIR$/aluraframe/client/js/models/Negociacao.js" />
         <option value="$PROJECT_DIR$/aluraframe/client/js/app/models/Negociacao.js" />
         <option value="$PROJECT_DIR$/aluraframe/client/js/app/helpers/DateHelper.js" />
-        <option value="$PROJECT_DIR$/aluraframe/client/js/app/models/NegociacoesList.js" />
         <option value="$PROJECT_DIR$/aluraframe/client/js/app/models/Mensagem.js" />
-        <option value="$PROJECT_DIR$/aluraframe/client/js/app/controllers/NegociacaoController.js" />
-        <option value="$PROJECT_DIR$/aluraframe/client/index.html" />
         <option value="$PROJECT_DIR$/aluraframe/client/js/app/views/NegociacoesView.js" />
         <option value="$PROJECT_DIR$/aluraframe/client/js/app/views/MensagemView.js" />
         <option value="$PROJECT_DIR$/aluraframe/client/js/app/views/View.js" />
+        <option value="$PROJECT_DIR$/aluraframe/client/index.html" />
+        <option value="$PROJECT_DIR$/aluraframe/client/js/app/models/NegociacoesList.js" />
+        <option value="$PROJECT_DIR$/aluraframe/client/js/app/controllers/NegociacaoController.js" />
       </list>
     </option>
   </component>
@@ -189,7 +217,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -230,12 +257,31 @@
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ES6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ES6" type="462c0819:PsiDirectoryNode" />
+              <item name="aluraframe" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ES6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ES6" type="462c0819:PsiDirectoryNode" />
+              <item name="aluraframe" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -276,11 +322,15 @@
       <workItem from="1540607105059" duration="9803000" />
       <workItem from="1540779026310" duration="765000" />
       <workItem from="1540822377805" duration="146000" />
+      <workItem from="1540924615587" duration="1879000" />
+      <workItem from="1540996847040" duration="2657000" />
+      <workItem from="1541088784656" duration="4000" />
+      <workItem from="1541430588860" duration="39000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16614000" />
+    <option name="totallyTimeSpent" value="21193000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -312,13 +362,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/aluraframe/client/js/index.js" />
-    <entry file="file://$PROJECT_DIR$/aluraframe/client/js/app/models/NegociacoesList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/aluraframe/client/js/app/helpers/DateHelper.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -326,17 +369,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aluraframe/client/js/app/controllers/NegociacaoController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="29" column="43" lean-forward="true" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/aluraframe/client/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1081">
-          <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="48" />
+        <state relative-caret-position="851">
+          <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -354,6 +390,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/aluraframe/client/js/app/views/NegociacoesView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aluraframe/client/js/app/models/NegociacoesList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/aluraframe/client/js/app/views/View.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -364,14 +414,14 @@
     <entry file="file://$PROJECT_DIR$/aluraframe/client/js/app/models/Mensagem.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aluraframe/client/js/app/views/NegociacoesView.js">
+    <entry file="file://$PROJECT_DIR$/aluraframe/client/js/app/controllers/NegociacaoController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        <state relative-caret-position="414">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
     </entry>

@@ -38,6 +38,28 @@ namespace Collections
 
             Display("Queue");
             Queues.QueueTest();
+
+            // Sorted by keys using a list
+            Display("SortedList");
+            SortedLists.SortedListTest();
+
+            // Sorted by keys using a balanced binary tree
+            Display("SortedDictionary");
+            SortedDictionaries.SortedDictionaryTest();
+
+            // Sorted set using a balanced binary tree
+            Display("SortedSet");
+            SortedSets.SortedSetTest();
+            SortedSets.SortedSetFunctions();
+
+            Display("Multi Dimensional Array");
+            MultiDimensionalArrays.MultiDimensionalArrayTest();
+
+            Display("JaggedArray");
+            JaggedArrays.JaggedArrayTest();
+
+            Display("LINQ");
+            LINQ.Test01();
         }
 
         static void Display(string s)

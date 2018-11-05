@@ -40,7 +40,7 @@ namespace Collections
             DisplayDictionary(dict, "Dictionary");
         }
 
-        public static void DisplayDictionary<K, V>(Dictionary<K, V> dict, string phrase)
+        public static void DisplayDictionary<K, V>(IDictionary<K, V> dict, string phrase)
         {
             Console.WriteLine(phrase);
 
