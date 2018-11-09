@@ -8,50 +8,17 @@ class NegociacaoController {
         this._quantidade = $('#quantidade');
         this._valor = $('#valor');
 
-        // model == this._list
-        /*this._list = new NegociacoesList(model => {
-            this._view.update(model);
-        });*/
+        this._list = new Bind(
+            new NegociacoesList(),
+            new NegociacoesView($('#negociacoesView')),
+            'add', 'empty'
+        );
 
-        // Using proxy
-        /*this._list = new Proxy(new NegociacoesList(), {
-            get: (target, prop, receiver) => {
-                return Reflect.get(target, prop, receiver);
-            }
-
-            set: (target, prop, value, receiver) => {
-
-                console.log(`${target[prop]} new value: ${value}`);
-                return Reflect.set(target, prop, value, receiver);
-            }
-        });*/
-
-        let self = this;
-        this._list = new Proxy(new NegociacoesList(), {
-
-            get(target, prop, receiver) {
-
-                if (['add', 'empty'].includes(prop) && typeof(target[prop]) === typeof(Function)) {
-
-                    return function () {
-
-                        Reflect.apply(target[prop], target, arguments);
-
-                        self._view.update(target);
-                    }
-
-                }
-
-                return Reflect.get(target, prop, receiver);
-            }
-        });
-
-        this._view = new NegociacoesView($('#negociacoesView'));
-        this._view.update(this._list);
-
-        this._mensagem = new Mensagem();
-        this._mView = new MensagemView($('#mensagemView'));
-        this._mView.update(this._mensagem);
+        this._mensagem = new Bind(
+            new Mensagem(),
+            new MensagemView($('#mensagemView')),
+            'texto'
+        );
     }
 
     add(event) {
@@ -59,10 +26,10 @@ class NegociacaoController {
         event.preventDefault();
 
         this._list.add(this._createNegociacao());
-        this._clearForm();
 
         this._mensagem.texto = 'Negociação adicionada com sucesso';
-        this._mView.update(this._mensagem);
+
+        this._clearForm();
     }
 
     _createNegociacao() {
@@ -87,7 +54,43 @@ class NegociacaoController {
 
         this._list.empty();
 
-        this._mensagem.text = "Negociacoes apagadas com sucesso";
-        this._mView.update(this._mensagem);
+        this._mensagem.texto = "Negociacoes apagadas com sucesso";
+    }
+
+    import() {
+
+        let xhr = new XMLHttpRequest();
+
+        xhr.open('GET', 'negociacoes/semana');
+
+        // 0: requisição ainda não iniciada
+        //
+        // 1: conexão com o servidor estabelecida
+        //
+        // 2: requisição recebida
+        //
+        // 3: processando requisição
+        //
+        // 4: requisição está concluída e a resposta está pronta
+        xhr.onreadystatechange = () => {
+
+            if (xhr.readyState === 4) {
+
+                if (xhr.status === 200) {
+                    console.log("Getting server information");
+                    JSON.parse(xhr.responseText)
+                        .map(obj => new Negociacao(new Date(obj.data), obj.quantidade, obj.valor))
+                        .forEach(neg => this._list.add(neg));
+
+                    this._mensagem.texto = "Negociações importadas com sucesso"
+                }
+                else {
+                    console.log(xhr.responseText);
+                    this._mensagem.texto = "Não foi possível importar as negociações";
+                }
+            }
+        }
+
+        xhr.send();
     }
 }

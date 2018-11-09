@@ -1,0 +1,6 @@
+class NegociacaoService {
+
+    getWeekly() {
+
+    }
+}

@@ -60,6 +60,8 @@ namespace Collections
 
             Display("LINQ");
             LINQ.Test01();
+            LINQ.Test02();
+            LINQ.Test03();
         }
 
         static void Display(string s)
